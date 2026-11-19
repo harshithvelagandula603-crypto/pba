@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Academic Result Input Validator</display-name>
+    <description>
+        Academic Result Input Validator: Enforces domain integrity constraints [0-40 internal, 0-60 external],
+        internal-before-external evaluation workflow, role-based faculty/student access, and MySQL JDBC persistence.
+    </description>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- 1. Authentication Servlet -->
+    <servlet>
+        <servlet-name>AuthServlet</servlet-name>
+        <servlet-class>com.academic.servlet.AuthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthServlet</servlet-name>
+        <url-pattern>/api/auth/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- 2. Student Records & Results Servlet -->
+    <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>com.academic.servlet.StudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/api/student/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- 3. Faculty Dashboard & Roster Servlet -->
+    <servlet>
+        <servlet-name>FacultyServlet</servlet-name>
+        <servlet-class>com.academic.servlet.FacultyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FacultyServlet</servlet-name>
+        <url-pattern>/api/faculty/dashboard-stats</url-pattern>
+        <url-pattern>/api/faculty/assigned-subjects</url-pattern>
+        <url-pattern>/api/faculty/subjects</url-pattern>
+        <url-pattern>/api/faculty/students</url-pattern>
+        <url-pattern>/api/faculty/student-marks</url-pattern>
+    </servlet-mapping>
+
+    <!-- 4. Marks Entry & Domain Integrity Servlet -->
+    <servlet>
+        <servlet-name>MarkEntryServlet</servlet-name>
+        <servlet-class>com.academic.servlet.MarkEntryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MarkEntryServlet</servlet-name>
+        <url-pattern>/api/faculty/mark</url-pattern>
+    </servlet-mapping>
+
+    <!-- 5. Student Import & BufferedReader Stream Servlet -->
+    <servlet>
+        <servlet-name>StudentImportServlet</servlet-name>
+        <servlet-class>com.academic.servlet.StudentImportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentImportServlet</servlet-name>
+        <url-pattern>/api/faculty/import-actual</url-pattern>
+        <url-pattern>/api/faculty/import-excel</url-pattern>
+        <url-pattern>/api/faculty/import-csv</url-pattern>
+    </servlet-mapping>
+
+    <!-- 6. Marks Import & Excel Template Servlet -->
+    <servlet>
+        <servlet-name>MarksImportServlet</servlet-name>
+        <servlet-class>com.academic.servlet.MarksImportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MarksImportServlet</servlet-name>
+        <url-pattern>/api/faculty/marks-template</url-pattern>
+        <url-pattern>/api/faculty/marks-import-preview</url-pattern>
+        <url-pattern>/api/faculty/marks-import-commit</url-pattern>
+    </servlet-mapping>
+
+    <!-- 7. Table Files Export Servlet (Protected Backend Directory Export) -->
+    <servlet>
+        <servlet-name>TableFileExportServlet</servlet-name>
+        <servlet-class>com.academic.servlet.TableFileExportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TableFileExportServlet</servlet-name>
+        <url-pattern>/api/faculty/export-table-files</url-pattern>
+    </servlet-mapping>
+
+    <!-- 8. Table File Input Validator Servlet (BufferedReader Domain Constraint Enforcement) -->
+    <servlet>
+        <servlet-name>TableFileInputValidatorServlet</servlet-name>
+        <servlet-class>com.academic.servlet.TableFileInputValidatorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TableFileInputValidatorServlet</servlet-name>
+        <url-pattern>/api/faculty/validate-table-file</url-pattern>
+        <url-pattern>/api/faculty/import-table-file</url-pattern>
+    </servlet-mapping>
+
+    <!-- Session Configuration -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+        <cookie-config>
+            <http-only>true</http-only>
+            <secure>false</secure>
+        </cookie-config>
+    </session-config>
+
+</web-app>

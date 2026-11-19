@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Faculty Dashboard - Academic Result Input Validator. Real-time class overview, subject configuration, and internal/external mark management.">
+  <title>Faculty Dashboard - Academic Result Input Validator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#faculty-main" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navigation Bar -->
+  <header class="dashboard-top-bar">
+    <div class="container dashboard-top-inner">
+      <a href="index.html" class="brand-link" aria-label="Academic Result Input Validator Home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </span>
+        <span>Academic Result Input Validator</span>
+      </a>
+
+      <div class="dashboard-user-info">
+        <div id="facultyPill" class="user-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span id="facultyPillText">Faculty: Loading...</span>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Dashboard Main Content -->
+  <main id="faculty-main" class="dashboard-main">
+    <div class="container">
+
+      <div class="dashboard-layout-grid">
+
+        <!-- Left-Side Vertical Navigation Panel (Fixed / Sticky Sidebar) -->
+        <aside class="dashboard-sidebar" id="facultySidebar" aria-label="Faculty Navigation">
+          <div class="sidebar-header">
+            <span class="sidebar-header-label">Faculty Navigation</span>
+          </div>
+
+          <nav class="sidebar-nav" aria-label="Faculty Dashboard Sections">
+            <a href="#section-my-subjects" class="sidebar-nav-link active" id="navLinkSubjects">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>My Assigned Subjects</span>
+            </a>
+
+            <a href="#section-subjects" class="sidebar-nav-link" id="navLinkConfigured">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <span>Configured Subjects</span>
+            </a>
+
+            <a href="#section-import" class="sidebar-nav-link" id="navLinkImport">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span>Import Marks from Excel</span>
+            </a>
+
+            <a href="#section-validate-table" class="sidebar-nav-link" id="navLinkValidate">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+              <span>Validate and Ingest Table Files</span>
+            </a>
+
+            <a href="#section-export" class="sidebar-nav-link" id="navLinkExport">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Export Academic Records</span>
+            </a>
+
+            <a href="#section-ai-analysis" class="sidebar-nav-link" id="navLinkAnalysis">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+              <span>Analysis</span>
+            </a>
+          </nav>
+
+          <!-- Sign Out — bottom of sidebar -->
+          <div class="sidebar-sign-out">
+            <button id="logoutBtn" class="sidebar-nav-link sidebar-sign-out-btn" type="button" aria-label="Sign Out of faculty session">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+              <span>Sign Out</span>
+            </button>
+          </div>
+        </aside>
+
+        <!-- Main Dashboard Content Area -->
+        <div class="dashboard-content-area" id="facultyContentArea">
+
+          <!-- Welcome & Faculty Profile Information Card -->
+          <section class="faculty-welcome-card" aria-labelledby="welcomeHeading">
+        <div class="faculty-welcome-header">
+          <div>
+            <h1 id="welcomeHeading" class="faculty-greeting-title">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              Faculty Academic Control & Evaluation Dashboard
+            </h1>
+            <p id="facultyWelcomeMsg" class="faculty-greeting-subtitle">
+              Welcome, Faculty Member! Monitor student enrollment, track internal &amp; external mark-entry progress, and manage validated academic records.
+            </p>
+          </div>
+        </div>
+
+        <!-- Faculty Profile Information from Authenticated Session -->
+        <div class="profile-meta-grid" aria-label="Faculty Profile Details">
+          <div class="profile-meta-chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Authenticated User: <strong id="profileUsername">---</strong></span>
+          </div>
+          <div class="profile-meta-chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Role: <strong id="profileRole">Faculty Grade Officer</strong></span>
+          </div>
+          <div class="profile-meta-chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>Department: <strong id="profileDept">Computer Science &amp; Engineering</strong></span>
+          </div>
+          <div class="profile-meta-chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>Session Status: <strong id="profileSessionStatus">Active &amp; Protected</strong></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: My Assigned Subjects (Authorized Curricular Subjects) -->
+      <section id="section-my-subjects" class="dashboard-card" aria-labelledby="mySubjectsTitle" style="margin-bottom: 28px;">
+        <div class="card-title-row">
+          <div>
+            <h2 id="mySubjectsTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              My Assigned Subjects
+            </h2>
+            <p class="card-subtitle" id="mySubjectsSubtitle">
+              Authorized curricular subjects assigned to your faculty account. Click <strong>Open Subject</strong> to enter and manage marks.
+            </p>
+          </div>
+        </div>
+
+        <div id="assignedSubjectsContainer" class="assigned-subjects-grid">
+          <div style="text-align: center; color: var(--color-text-secondary); padding: 24px; grid-column: 1 / -1;">
+            Loading your assigned subjects from database...
+          </div>
+        </div>
+      </section>
+
+      <!-- KPI Summary Cards Grid (Real Database Values) -->
+      <section class="kpi-grid" aria-label="Academic Summary Key Performance Indicators">
+        <!-- KPI 0: My Assigned Subjects (Faculty-Specific) -->
+        <div class="kpi-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">My Assigned Subjects</span>
+            <div class="kpi-icon-wrap navy" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+          </div>
+          <div id="kpiMyAssignedSubjects" class="kpi-value">---</div>
+          <div class="kpi-subtext">Subjects assigned to your faculty account</div>
+        </div>
+
+        <!-- KPI 1: Total Registered Students -->
+        <div class="kpi-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">Registered Students</span>
+            <div class="kpi-icon-wrap navy" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+          </div>
+          <div id="kpiTotalStudents" class="kpi-value">---</div>
+          <div class="kpi-subtext">Total active student records in MySQL database</div>
+        </div>
+
+        <!-- KPI 2: Total Subjects -->
+        <div class="kpi-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">Configured Subjects</span>
+            <div class="kpi-icon-wrap blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+          </div>
+          <div id="kpiTotalSubjects" class="kpi-value">---</div>
+          <div class="kpi-subtext">40 Internal + 60 External = 100 Total marks per subject</div>
+        </div>
+
+        <!-- KPI 3: Students with Marks Pending -->
+        <div class="kpi-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">Marks Pending</span>
+            <div class="kpi-icon-wrap warning" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+          </div>
+          <div id="kpiPendingStudents" class="kpi-value">---</div>
+          <div class="kpi-subtext">Students with incomplete internal or external evaluations</div>
+        </div>
+
+        <!-- KPI 4: Completed Mark Records -->
+        <div class="kpi-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">Completed Evaluations</span>
+            <div class="kpi-icon-wrap success" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div id="kpiCompletedMarks" class="kpi-value">---</div>
+          <div class="kpi-subtext">Subject records with both internal &amp; external marks entered</div>
+        </div>
+      </section>
+
+      <!-- Section: Configured Curricular Subjects Overview -->
+      <section id="section-subjects" class="dashboard-card" aria-labelledby="subjectsOverviewTitle">
+        <div class="card-title-row">
+          <div>
+            <h2 id="subjectsOverviewTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              Configured Curricular Subjects &amp; Evaluation Progress
+            </h2>
+            <p class="card-subtitle">
+              Each subject is partitioned into <strong>Internal Assessment (40 marks)</strong> and <strong>External Examination (60 marks)</strong>. Total = Internal + External. Missing components are stored as NULL ("Not Updated").
+            </p>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" aria-label="Curricular Subjects Overview Table">
+            <thead>
+              <tr>
+                <th scope="col">Subject Code</th>
+                <th scope="col">Subject Name</th>
+                <th scope="col">Internal Weight</th>
+                <th scope="col">External Weight</th>
+                <th scope="col">Total Max Marks</th>
+                <th scope="col">Mark Entry Progress</th>
+                <th scope="col">Unentered Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="subjectsOverviewTableBody">
+              <tr>
+                <td colspan="8" style="text-align: center; color: var(--color-text-secondary); padding: 24px;">
+                  Loading configured subjects from database...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+
+
+      <!-- Section: Excel Marks Importer -->
+      <section id="section-import" class="dashboard-card" aria-labelledby="importCardTitle">
+        <div class="card-title-row">
+          <div>
+            <h2 id="importCardTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              Import Marks from Excel
+            </h2>
+            <p class="card-subtitle">
+              Upload an Excel spreadsheet (<strong>.xlsx</strong> or <strong>.xls</strong>) containing marks for your assigned subject. Download standard Excel template, preview validation results, and safely import valid marks into institutional records.
+            </p>
+          </div>
+        </div>
+
+        <!-- Controls Bar: Subject Selection, Download Template, File Choose, Preview -->
+        <div class="marks-import-controls-bar">
+          <div class="import-ctrl-group">
+            <label for="importSubjectSelect" class="import-ctrl-label">Assigned Subject</label>
+            <select id="importSubjectSelect" class="form-input" style="min-width: 220px; font-size: 0.875rem; padding: 7px 12px;">
+              <option value="">Loading assigned subjects...</option>
+            </select>
+          </div>
+
+          <div class="import-ctrl-group" style="align-self: flex-end;">
+            <button id="btnDownloadTemplate" class="btn btn-secondary" type="button" style="display: inline-flex; align-items: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Excel Template
+            </button>
+          </div>
+
+          <span style="color: var(--color-border); align-self: center; font-size: 1.25rem;">|</span>
+
+          <div class="import-ctrl-group">
+            <label for="excelMarksFileInput" class="import-ctrl-label">Choose Excel File</label>
+            <input type="file" id="excelMarksFileInput" accept=".xlsx,.xls" style="font-size: 0.875rem; padding: 5px;">
+          </div>
+
+          <div class="import-ctrl-group" style="align-self: flex-end;">
+            <button id="btnPreviewMarks" class="btn btn-primary" type="button" style="display: inline-flex; align-items: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              Preview Marks
+            </button>
+          </div>
+        </div>
+
+        <!-- Preview Area (Rendered after file selection & preview request) -->
+        <div id="marksPreviewArea" style="display: none; margin-top: 20px;">
+          <div class="preview-summary-bar">
+            <div>
+              <strong style="color: var(--color-primary); font-size: 0.9375rem;">Import Validation Preview:</strong>
+              <span id="previewSubjectDisplay" style="color: #64748B; font-size: 0.875rem; margin-left: 8px;">Subject: ---</span>
+            </div>
+            <div class="preview-stat-chips">
+              <span class="stat-chip total" id="chipTotalRows">Total: 0 rows</span>
+              <span class="stat-chip valid" id="chipValidRows">Valid: 0</span>
+              <span class="stat-chip invalid" id="chipInvalidRows">Invalid: 0</span>
+            </div>
+          </div>
+
+          <div class="preview-table-container">
+            <table class="data-table" aria-label="Excel Marks Preview Table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 60px;">Row</th>
+                  <th scope="col">Student ID</th>
+                  <th scope="col">Student Name</th>
+                  <th scope="col">Internal Marks (0&ndash;40)</th>
+                  <th scope="col">External Marks (0&ndash;60)</th>
+                  <th scope="col">Validation Status</th>
+                  <th scope="col">Details / Remarks</th>
+                </tr>
+              </thead>
+              <tbody id="previewTableBody">
+                <!-- Dynamically populated rows -->
+              </tbody>
+            </table>
+          </div>
+
+          <div style="display: flex; gap: 12px; align-items: center; justify-content: flex-end; margin-top: 14px;">
+            <button id="btnCancelPreview" class="btn btn-secondary" type="button">Cancel Preview</button>
+            <button id="btnCommitMarksImport" class="btn btn-primary" type="button" style="display: inline-flex; align-items: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Import Valid Marks
+            </button>
+          </div>
+        </div>
+
+        <!-- Post-Import Results Summary Card -->
+        <div id="marksImportResultsArea" class="import-results-card" style="display: none;">
+          <div class="results-header-row">
+            <h3 class="results-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#155724" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Import Execution Summary
+            </h3>
+            <button id="btnCloseResults" class="btn btn-secondary" type="button" style="padding: 4px 12px; font-size: 0.8125rem;">Close Summary</button>
+          </div>
+
+          <div class="preview-stat-chips" style="margin-bottom: 14px; flex-wrap: wrap;">
+            <span class="stat-chip total" id="resProcessedCount">Rows Processed: 0</span>
+            <span class="stat-chip valid" id="resValidCount">Valid Rows: 0</span>
+            <span class="stat-chip invalid" id="resInvalidCount">Invalid Rows: 0</span>
+            <span class="stat-chip valid" id="resImportedCount">Successful Imports: 0</span>
+            <span class="stat-chip invalid" id="resRejectedCount">Rejected Rows: 0</span>
+          </div>
+
+          <div id="importStorageStatusBox" style="margin-bottom: 14px; padding: 12px 14px; background: #EEF4FB; border-left: 4px solid #1E3A5F; border-radius: 4px; font-size: 0.8125rem;">
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 6px;">
+              <span><strong>Table Files Status:</strong> <span id="resTableStatus" style="color: #2E7D32; font-weight: 700;">SUCCESS</span></span>
+              <span><strong>MySQL Database Sync:</strong> <span id="resDbStatus" style="color: #2E7D32; font-weight: 700;">SYNCHRONIZED</span></span>
+              <span><strong>AI Result Analysis:</strong> <span id="resAiStatus" style="color: #0D6EFD; font-weight: 700;">AVAILABLE</span></span>
+            </div>
+            <div style="color: #495057; font-size: 0.75rem;">
+              <strong>Backend Table File Paths:</strong> <code>data/export/marks.csv</code> &bull; <code>data/export/results.csv</code>
+            </div>
+            <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+              <span style="font-weight: 600; color: #1E3A5F; font-size: 0.8125rem;">Download Saved Records:</span>
+              <button id="btnQuickExportExcel" class="btn btn-primary" type="button" style="font-size: 0.75rem; padding: 4px 10px; display: inline-flex; align-items: center; gap: 6px;">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Export Excel (.xlsx)
+              </button>
+              <button id="btnQuickExportCsv" class="btn btn-secondary" type="button" style="font-size: 0.75rem; padding: 4px 10px; display: inline-flex; align-items: center; gap: 6px;">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Export CSV (.csv)
+              </button>
+            </div>
+          </div>
+
+          <div id="rejectedDetailsBox" style="display: none;">
+            <p style="font-weight: 600; font-size: 0.875rem; color: #721C24; margin-bottom: 6px;">Rejected Rows and Rejection Reasons:</p>
+            <div class="rejected-table-wrap">
+              <table class="data-table" style="margin: 0;">
+                <thead>
+                  <tr>
+                    <th scope="col" style="background-color: #F8D7DA; color: #721C24;">Student ID</th>
+                    <th scope="col" style="background-color: #F8D7DA; color: #721C24;">Rejection Reason</th>
+                  </tr>
+                </thead>
+                <tbody id="rejectedTableBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback Banner -->
+        <div id="importFeedback" class="import-feedback" role="alert"></div>
+      </section>
+
+      <!-- Section: Validate Table File (BufferedReader Domain Integrity Engine) -->
+      <section id="section-validate-table" class="dashboard-card" aria-labelledby="validateTableCardTitle" style="margin-top: 28px;">
+        <div class="card-title-row">
+          <div>
+            <h2 id="validateTableCardTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+              Validate &amp; Ingest Table File (.csv / .txt)
+            </h2>
+            <p class="card-subtitle">
+              Read records line-by-line via <strong>java.io.BufferedReader</strong>, enforcing domain constraints (student ID exists, authorized subject, internal 0–40, external 0–60, missing marks preserved) before committing to <strong>marks.csv</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="marks-import-controls-bar" style="align-items: flex-start; gap: 16px; flex-wrap: wrap;">
+          <div class="import-ctrl-group" style="flex: 1; min-width: 260px;">
+            <label for="tableFileInput" class="import-ctrl-label">Choose CSV/Text File</label>
+            <input type="file" id="tableFileInput" accept=".csv,.txt" class="form-input" style="padding: 7px 12px; font-size: 0.875rem;" />
+            <small style="color: var(--color-text-secondary); font-size: 0.75rem; margin-top: 4px; display: block;">
+              Format: <code>student_id,subject_id,internal_marks,external_marks</code>
+            </small>
+          </div>
+
+          <div class="import-ctrl-group" style="align-self: flex-end;">
+            <button id="btnValidateTableFile" class="btn btn-primary" type="button" style="display: inline-flex; align-items: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              Validate &amp; Ingest Records
+            </button>
+          </div>
+        </div>
+
+        <!-- Feedback & Validation Error Report -->
+        <div id="tableFileValidationFeedback" class="import-feedback" role="alert" style="display: none; margin-top: 14px;"></div>
+      </section>
+
+      <!-- Section: Export Academic Records -->
+      <section id="section-export" class="dashboard-card" aria-labelledby="exportCardTitle" style="margin-top: 28px;">
+        <div class="card-title-row">
+          <div>
+            <h2 id="exportCardTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Export Academic Records
+            </h2>
+            <p class="card-subtitle">
+              Export validated and saved academic evaluation records to Excel (<strong>.xlsx</strong>) or CSV (<strong>.csv</strong>). Retrieves the latest saved marks and calculated result status from institutional storage.
+            </p>
+          </div>
+        </div>
+
+        <div class="marks-import-controls-bar" style="align-items: flex-end; gap: 14px; flex-wrap: wrap;">
+          <div class="import-ctrl-group" style="min-width: 220px;">
+            <label for="exportSubjectSelect" class="import-ctrl-label">Assigned Subject</label>
+            <select id="exportSubjectSelect" class="form-input" style="font-size: 0.875rem; padding: 7px 12px;">
+              <option value="ALL">All Assigned Subjects</option>
+            </select>
+          </div>
+
+          <div class="import-ctrl-group" style="display: flex; gap: 10px; align-items: center;">
+            <button id="btnExportExcel" class="btn btn-primary" type="button" style="display: inline-flex; align-items: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Export as Excel (.xlsx)
+            </button>
+
+            <button id="btnExportCsv" class="btn btn-secondary" type="button" style="display: inline-flex; align-items: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Export as CSV (.csv)
+            </button>
+          </div>
+        </div>
+
+        <!-- Feedback & Status Report -->
+        <div id="exportFeedback" class="import-feedback" role="alert" style="display: none; margin-top: 14px;"></div>
+      </section>
+
+
+      <!-- Section: AI Analysis (Step 6) -->
+      <section id="section-ai-analysis" class="dashboard-card" aria-labelledby="aiAnalysisCardTitle" style="margin-top: 28px;">
+        <div class="card-title-row" style="flex-wrap: wrap; gap: 12px;">
+          <div>
+            <h2 id="aiAnalysisCardTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+              AI Analysis
+            </h2>
+            <p class="card-subtitle">
+              Subject-wise averages, highest/lowest marks, class performance tier, pass/fail percentages, subjects needing attention, students needing academic support — for your authorized subjects only.
+            </p>
+          </div>
+          <button id="btnRefreshAiAnalysis" class="btn btn-secondary" type="button" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8125rem;">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <polyline points="1 20 1 14 7 14"></polyline>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+            </svg>
+            Refresh AI Analysis
+          </button>
+        </div>
+
+        <div id="aiAnalysisContainer" style="margin-top: 14px;">
+          <!-- Populated dynamically -->
+          <div style="padding: 24px; text-align: center; color: var(--color-text-secondary); font-size: 0.875rem;">
+            Loading academic performance analytics...
+          </div>
+        </div>
+      </section>
+
+        </div><!-- /.dashboard-content-area -->
+      </div><!-- /.dashboard-layout-grid -->
+
+    </div>
+  </main>
+
+  <!-- Minimal Brand Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>&copy; Academic Result Input Validator &bull; Protected Faculty Evaluation Terminal &bull; Domain Integrity &amp; Constraint Enforcement</p>
+    </div>
+  </footer>
+
+  <script src="js/faculty-dashboard.js"></script>
+</body>
+</html>

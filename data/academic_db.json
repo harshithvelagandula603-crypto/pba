@@ -1,0 +1,3275 @@
+﻿{
+    "subjects":  [
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "DBMS",
+                         "subjectCode":  "DBMS",
+                         "maxMarks":  100,
+                         "subjectName":  "Database Management Systems"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "MATHS",
+                         "subjectCode":  "Maths",
+                         "maxMarks":  100,
+                         "subjectName":  "Mathematics"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "OOPS",
+                         "subjectCode":  "OOPs",
+                         "maxMarks":  100,
+                         "subjectName":  "Object-Oriented Programming"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "SE",
+                         "subjectCode":  "SE",
+                         "maxMarks":  100,
+                         "subjectName":  "Software Engineering"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "COA",
+                         "subjectCode":  "COA",
+                         "maxMarks":  100,
+                         "subjectName":  "Computer Organization and Architecture"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "SE_LAB",
+                         "subjectCode":  "SE Lab",
+                         "maxMarks":  100,
+                         "subjectName":  "Software Engineering Laboratory"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "MATHS_LAB",
+                         "subjectCode":  "Maths Lab",
+                         "maxMarks":  100,
+                         "subjectName":  "Mathematics Laboratory"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "OOPS_LAB",
+                         "subjectCode":  "OOPs Lab",
+                         "maxMarks":  100,
+                         "subjectName":  "Object-Oriented Programming Laboratory"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "SD_LAB",
+                         "subjectCode":  "SD Lab",
+                         "maxMarks":  100,
+                         "subjectName":  "Software Development Laboratory"
+                     },
+                     {
+                         "maxExternal":  60,
+                         "maxInternal":  40,
+                         "subjectId":  "DBMS_LAB",
+                         "subjectCode":  "DBMS Lab",
+                         "maxMarks":  100,
+                         "subjectName":  "Database Management Systems Laboratory"
+                     }
+                 ],
+    "users":  [
+                  {
+                      "username":  "faculty",
+                      "accountStatus":  "ACTIVE",
+                      "role":  "FACULTY",
+                      "passwordHash":  "admin123"
+                  },
+                  {
+                      "username":  "FAC101",
+                      "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                      "role":  "FACULTY",
+                      "accountStatus":  "ACTIVE"
+                  },
+                  {
+                      "username":  "FAC103",
+                      "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                      "role":  "FACULTY",
+                      "accountStatus":  "ACTIVE"
+                  },
+                  {
+                      "username":  "FAC105",
+                      "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                      "role":  "FACULTY",
+                      "accountStatus":  "ACTIVE"
+                  },
+                  {
+                      "username":  "FAC104",
+                      "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                      "role":  "FACULTY",
+                      "accountStatus":  "ACTIVE"
+                  },
+                  {
+                      "username":  "FAC102",
+                      "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                      "role":  "FACULTY",
+                      "accountStatus":  "ACTIVE"
+                  },
+                  {
+                      "username":  "FAC106",
+                      "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                      "role":  "FACULTY",
+                      "accountStatus":  "ACTIVE"
+                  },
+                  {
+                      "username":  "FAC107",
+                      "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                      "role":  "FACULTY",
+                      "accountStatus":  "ACTIVE"
+                  },
+                  {
+                      "username":  "FAC108",
+                      "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                      "role":  "FACULTY",
+                      "accountStatus":  "ACTIVE"
+                  }
+              ],
+    "passfailConfig":  {
+                           "configured":  true,
+                           "passMark":  35,
+                           "maxMarks":  100,
+                           "rule":  "35 marks or above out of 100 = PASS; below 35 marks = FAIL"
+                       },
+    "faculty":  [
+                    {
+                        "facultyId":  "FAC101",
+                        "email":  "FAC101@edu.in",
+                        "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                        "accountStatus":  "ACTIVE",
+                        "createdAt":  "2026-10-21T13:41:28.8774056Z"
+                    },
+                    {
+                        "facultyId":  "FAC103",
+                        "email":  "FAC103@edu.in",
+                        "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                        "accountStatus":  "ACTIVE",
+                        "createdAt":  "2026-10-21T13:41:28.9660957Z"
+                    },
+                    {
+                        "facultyId":  "FAC105",
+                        "email":  "FAC105@edu.in",
+                        "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                        "accountStatus":  "ACTIVE",
+                        "createdAt":  "2026-10-21T13:41:28.9681136Z"
+                    },
+                    {
+                        "facultyId":  "FAC104",
+                        "email":  "FAC104@edu.in",
+                        "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                        "accountStatus":  "ACTIVE",
+                        "createdAt":  "2026-10-21T13:41:28.9701302Z"
+                    },
+                    {
+                        "facultyId":  "FAC102",
+                        "email":  "FAC102@edu.in",
+                        "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                        "accountStatus":  "ACTIVE",
+                        "createdAt":  "2026-10-21T13:41:28.9721481Z"
+                    },
+                    {
+                        "facultyId":  "FAC106",
+                        "email":  "FAC106@edu.in",
+                        "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                        "accountStatus":  "ACTIVE",
+                        "createdAt":  "2026-10-21T13:41:28.9721481Z"
+                    },
+                    {
+                        "facultyId":  "FAC107",
+                        "email":  "FAC107@edu.in",
+                        "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                        "accountStatus":  "ACTIVE",
+                        "createdAt":  "2026-10-21T13:41:28.9721481Z"
+                    },
+                    {
+                        "facultyId":  "FAC108",
+                        "email":  "FAC108@edu.in",
+                        "passwordHash":  "SHA256:66c38112114eff0a44f1997e5c27d0287e960663003d02d1a48cd292f767e904",
+                        "accountStatus":  "ACTIVE",
+                        "createdAt":  "2026-10-21T13:41:28.9721481Z"
+                    }
+                ],
+    "facultySubjects":  [
+                            {
+                                "assignmentId":  "98930a4a-e54d-452c-9dea-04bbe885f893",
+                                "facultyId":  "FAC101",
+                                "subjectId":  "DBMS",
+                                "rawSubject":  "DBMS",
+                                "assignedAt":  "2026-10-21T13:41:28.7736297Z"
+                            },
+                            {
+                                "assignmentId":  "bdc6d14b-6f40-421d-bb03-595afaa468ef",
+                                "facultyId":  "FAC103",
+                                "subjectId":  "OOPS",
+                                "rawSubject":  "OOPS",
+                                "assignedAt":  "2026-10-21T13:41:28.7878910Z"
+                            },
+                            {
+                                "assignmentId":  "775b5258-dc37-45b1-84fe-0b0c9099dde1",
+                                "facultyId":  "FAC105",
+                                "subjectId":  "SE",
+                                "rawSubject":  "SE",
+                                "assignedAt":  "2026-10-21T13:41:28.7896482Z"
+                            },
+                            {
+                                "assignmentId":  "bd0a563f-1172-4d1a-8993-42ce2a84b1c0",
+                                "facultyId":  "FAC104",
+                                "subjectId":  "COA",
+                                "rawSubject":  "COA",
+                                "assignedAt":  "2026-10-21T13:41:28.7896482Z"
+                            },
+                            {
+                                "assignmentId":  "b2e22add-4d09-4b26-aecc-af9b1d8e6fb8",
+                                "facultyId":  "FAC102",
+                                "subjectId":  "MATHS",
+                                "rawSubject":  "MATHS",
+                                "assignedAt":  "2026-10-21T13:41:28.7896482Z"
+                            },
+                            {
+                                "assignmentId":  "f3724272-5ce5-4bcc-baea-09f452823a7e",
+                                "facultyId":  "FAC106",
+                                "subjectId":  "SD_LAB",
+                                "rawSubject":  "SD LAB",
+                                "assignedAt":  "2026-10-21T13:41:28.7896482Z"
+                            },
+                            {
+                                "assignmentId":  "959f78fd-7fa0-4cd7-9368-837e6569919a",
+                                "facultyId":  "FAC107",
+                                "subjectId":  "OOPS_LAB",
+                                "rawSubject":  "OOPS LAB",
+                                "assignedAt":  "2026-10-21T13:41:28.7896482Z"
+                            },
+                            {
+                                "assignmentId":  "8fabac88-1529-44fc-82e2-a76e3881be9a",
+                                "facultyId":  "FAC102",
+                                "subjectId":  "MATHS_LAB",
+                                "rawSubject":  "MATHS LAB",
+                                "assignedAt":  "2026-10-21T13:41:28.7896482Z"
+                            },
+                            {
+                                "assignmentId":  "caff5d9d-ffb5-4e78-af1b-bbfc4b82f991",
+                                "facultyId":  "FAC108",
+                                "subjectId":  "DBMS_LAB",
+                                "rawSubject":  "DBMS LAB",
+                                "assignedAt":  "2026-10-21T13:41:28.7896482Z"
+                            },
+                            {
+                                "assignmentId":  "70d88689-6aac-46d2-a858-a6ce81c6bf0b",
+                                "facultyId":  "FAC101",
+                                "subjectId":  "SE_LAB",
+                                "rawSubject":  "SE LAB",
+                                "assignedAt":  "2026-10-21T13:41:28.7896482Z"
+                            }
+                        ],
+    "students":  [
+                     {
+                         "studentId":  "25QM1A66D6",
+                         "studentName":  "Shiva Charan Goud",
+                         "rollNo":  "25QM1A66D6"
+                     },
+                     {
+                         "studentId":  "25QM1A66D7",
+                         "studentName":  "Koushik Reddy",
+                         "rollNo":  "25QM1A66D7"
+                     },
+                     {
+                         "studentId":  "25QM1A66D8",
+                         "studentName":  "Siddharth",
+                         "rollNo":  "25QM1A66D8"
+                     },
+                     {
+                         "studentId":  "25QM1A66D9",
+                         "studentName":  "Rahul",
+                         "rollNo":  "25QM1A66D9"
+                     },
+                     {
+                         "studentId":  "25QM1A66E0",
+                         "studentName":  "Mahendar",
+                         "rollNo":  "25QM1A66E0"
+                     },
+                     {
+                         "studentId":  "25QM1A66E1",
+                         "studentName":  "Sri Charthi",
+                         "rollNo":  "25QM1A66E1"
+                     },
+                     {
+                         "studentId":  "25QM1A66E2",
+                         "studentName":  "Aarthi",
+                         "rollNo":  "25QM1A66E2"
+                     },
+                     {
+                         "studentId":  "25QM1A66E3",
+                         "studentName":  "Madhupriya",
+                         "rollNo":  "25QM1A66E3"
+                     },
+                     {
+                         "studentId":  "25QM1A66E4",
+                         "studentName":  "Vishwa",
+                         "rollNo":  "25QM1A66E4"
+                     },
+                     {
+                         "studentId":  "25QM1A66E5",
+                         "studentName":  "Venkat Ganesh",
+                         "rollNo":  "25QM1A66E5"
+                     },
+                     {
+                         "studentId":  "25QM1A66E6",
+                         "studentName":  "Bhuva",
+                         "rollNo":  "25QM1A66E6"
+                     },
+                     {
+                         "studentId":  "25QM1A66E7",
+                         "studentName":  "Tanuja",
+                         "rollNo":  "25QM1A66E7"
+                     },
+                     {
+                         "studentId":  "25QM1A66E8",
+                         "studentName":  "Chanakya Vara Prasad",
+                         "rollNo":  "25QM1A66E8"
+                     },
+                     {
+                         "studentId":  "25QM1A66E9",
+                         "studentName":  "Ajay",
+                         "rollNo":  "25QM1A66E9"
+                     },
+                     {
+                         "studentId":  "25QM1A66F0",
+                         "studentName":  "Aash mitha",
+                         "rollNo":  "25QM1A66F0"
+                     },
+                     {
+                         "studentId":  "25QM1A66F1",
+                         "studentName":  "Sai Charan",
+                         "rollNo":  "25QM1A66F1"
+                     },
+                     {
+                         "studentId":  "25QM1A66F2",
+                         "studentName":  "Abhishek",
+                         "rollNo":  "25QM1A66F2"
+                     },
+                     {
+                         "studentId":  "25QM1A66F3",
+                         "studentName":  "Avinash",
+                         "rollNo":  "25QM1A66F3"
+                     },
+                     {
+                         "studentId":  "25QM1A66F4",
+                         "studentName":  "Raghu veer",
+                         "rollNo":  "25QM1A66F4"
+                     },
+                     {
+                         "studentId":  "25QM1A66F5",
+                         "studentName":  "Sharath",
+                         "rollNo":  "25QM1A66F5"
+                     },
+                     {
+                         "studentId":  "25QM1A66F6",
+                         "studentName":  "Sai Ganesh",
+                         "rollNo":  "25QM1A66F6"
+                     },
+                     {
+                         "studentId":  "25QM1A66F7",
+                         "studentName":  "Sarfaz",
+                         "rollNo":  "25QM1A66F7"
+                     },
+                     {
+                         "studentId":  "25QM1A66F8",
+                         "studentName":  "Siddu",
+                         "rollNo":  "25QM1A66F8"
+                     },
+                     {
+                         "studentId":  "25QM1A66F9",
+                         "studentName":  "Manasa",
+                         "rollNo":  "25QM1A66F9"
+                     },
+                     {
+                         "studentId":  "25QM1A66G0",
+                         "studentName":  "Hansika",
+                         "rollNo":  "25QM1A66G0"
+                     },
+                     {
+                         "studentId":  "25QM1A66G1",
+                         "studentName":  "Ezra",
+                         "rollNo":  "25QM1A66G1"
+                     },
+                     {
+                         "studentId":  "25QM1A66G2",
+                         "studentName":  "Sai Rohith",
+                         "rollNo":  "25QM1A66G2"
+                     },
+                     {
+                         "studentId":  "25QM1A66G3",
+                         "studentName":  "Suman Ali",
+                         "rollNo":  "25QM1A66G3"
+                     },
+                     {
+                         "studentId":  "25QM1A66G4",
+                         "studentName":  "Bhramanghna",
+                         "rollNo":  "25QM1A66G4"
+                     },
+                     {
+                         "studentId":  "25QM1A66G5",
+                         "studentName":  "Arshiya",
+                         "rollNo":  "25QM1A66G5"
+                     },
+                     {
+                         "studentId":  "25QM1A66G6",
+                         "studentName":  "Vinay",
+                         "rollNo":  "25QM1A66G6"
+                     },
+                     {
+                         "studentId":  "25QM1A66G7",
+                         "studentName":  "Veera",
+                         "rollNo":  "25QM1A66G7"
+                     },
+                     {
+                         "studentId":  "25QM1A66G8",
+                         "studentName":  "Yokshitha",
+                         "rollNo":  "25QM1A66G8"
+                     },
+                     {
+                         "studentId":  "25QM1A66G9",
+                         "studentName":  "Akhil",
+                         "rollNo":  "25QM1A66G9"
+                     }
+                 ],
+    "subjectMarks":  [
+                         {
+                             "markId":  "1e17935b-c76b-4f8a-ac78-4cf15f69dfad",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Marks Pending",
+                             "evalStatus":  "Marks Pending",
+                             "externalMarks":  null,
+                             "internalMarks":  40,
+                             "updatedAt":  "2026-11-19T09:08:59.7403871Z"
+                         },
+                         {
+                             "markId":  "56d999b1-cac1-4695-bac0-c97f1b3fb5db",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T16:46:28.0437973Z"
+                         },
+                         {
+                             "markId":  "0d75a285-e37e-41d0-8e06-b8173af96cc5",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "OOPS",
+                             "totalMarks":  31,
+                             "status":  "Fully Entered",
+                             "evalStatus":  "Fully Entered",
+                             "internalMarks":  8,
+                             "externalMarks":  23,
+                             "updatedAt":  "2026-11-12T18:02:12.4858808Z"
+                         },
+                         {
+                             "markId":  "a8747748-4861-4e14-9a17-e37fa7edb408",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "675386c6-1b48-43f8-8e9f-26f1949229aa",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T16:47:49.4929501Z"
+                         },
+                         {
+                             "markId":  "9e850643-0ce5-4cb6-bcb7-ed8e4f6cda88",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "SE_LAB",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T17:36:54.4523572Z"
+                         },
+                         {
+                             "markId":  "dca8a4e7-7619-4815-afb0-ade6a8b74554",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "91922032-76c7-498b-bfab-cae5d0336e03",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "fbcfbbdc-2d9f-4dae-85eb-ce0e043e7a56",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "df8ca6ac-4368-415e-8a4d-a24abb92560d",
+                             "studentId":  "25QM1A66D6",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "c4d9bd87-cd50-41a6-9310-6ec6ec5995d4",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-16T01:33:34.9572480Z"
+                         },
+                         {
+                             "markId":  "dcd6f4f4-6e1d-4532-ac61-0376038c8171",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "02a9edff-de3d-4100-a228-c128074493c0",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "70ca891a-1afb-4226-9c1e-4877525989ae",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "c3dfc843-6deb-49fa-9eeb-69e44ec9d4d5",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "991a1b1b-bcf7-4082-a213-af7045a74ef6",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "29c4a844-e1a1-4af7-92a2-8307e5980026",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "eab2ba71-5d2c-4a53-9ecc-39c7a09735aa",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "92cf5a6f-3e3e-4979-a9b1-c10b66f4a3b3",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "184b3ba8-a18f-4bf2-ab75-565c0d9a7ff0",
+                             "studentId":  "25QM1A66D7",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2231296Z"
+                         },
+                         {
+                             "markId":  "e2ecfe4c-9f8e-4011-8fd5-bc5e78d08260",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T17:39:20.8444294Z"
+                         },
+                         {
+                             "markId":  "0ef7136c-db2e-4eca-8c1b-6cb52f466eaf",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2284059Z"
+                         },
+                         {
+                             "markId":  "4cbbb679-ba7c-4964-b3a8-82b74aa215aa",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2284059Z"
+                         },
+                         {
+                             "markId":  "52aca173-1f2e-4c23-b696-3db7e4ddd97e",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2284059Z"
+                         },
+                         {
+                             "markId":  "14800419-50e7-41c6-9535-ac41de1e9add",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2284059Z"
+                         },
+                         {
+                             "markId":  "75ac0c5c-6b1f-4049-bc82-e90de862271f",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2284059Z"
+                         },
+                         {
+                             "markId":  "d63b3728-4ca3-4921-8343-5755984e17f6",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2284059Z"
+                         },
+                         {
+                             "markId":  "3cf0d299-fa6b-431b-b3e8-ac1bc367d59c",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2284059Z"
+                         },
+                         {
+                             "markId":  "95c661c8-cf18-4e06-8841-94b2480beba2",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "8cb0b19e-d43a-4a63-b39b-074e87ec4aa4",
+                             "studentId":  "25QM1A66D8",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "72e967a8-8dd4-464e-848d-3592e7c8c026",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T17:42:42.4954535Z"
+                         },
+                         {
+                             "markId":  "e3a6317b-f1ba-47c0-8994-7da0c4d706b3",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "cb9b5707-1662-4706-b3ff-72b1bdd2fdc0",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "b00837e7-f819-46e9-b18a-0a70920692d9",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "3dcc3356-fc2b-4d77-ac75-df57079ca0d5",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "2d341274-4704-4b83-922c-a9214afebc05",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "574e233e-4814-427d-a1fe-fe4d31a7eb20",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "663bf952-056e-4246-b96d-8a245db99507",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "aa3eb548-4001-4546-9101-6e73142f0aa8",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "ecc18cdb-7acc-434b-8bf3-a885d8c26d33",
+                             "studentId":  "25QM1A66D9",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "72cfdf46-1c85-4f6c-b82f-9720b3559cd9",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T17:44:34.5213133Z"
+                         },
+                         {
+                             "markId":  "1d736d85-2496-4d33-a4bc-ab5dea8f9372",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "856c0432-c513-420b-a1aa-6508033eea60",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "53168f89-e991-4d94-9d3c-d3fb89d6496c",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "2319d2eb-54e9-4bef-a75b-ba8b3a982628",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "cf587dd2-5354-4e48-924d-d868bbf7a982",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "a9bbd03d-0895-4a72-9b28-a20f78606d71",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "39835a93-e34d-404b-8e80-30fd888d353a",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "85c4cdc0-1658-4db0-b24d-5e2aa1d767cd",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "1b3b1a35-e21c-4e56-a368-75e891befa18",
+                             "studentId":  "25QM1A66E0",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "9cfbe6f2-dcea-469c-b9a8-8fb2e6938639",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T16:42:58.1410062Z"
+                         },
+                         {
+                             "markId":  "aeafefb1-781d-4b0c-9bed-3b990a2ff45d",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "c1a4ce8e-5b73-4bc9-8bd3-bc0091982380",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "3d4432bb-d07a-4076-9e09-72d049ce8f87",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "14d2ee8b-4eef-450c-9130-a77f53ed2e22",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "1d2ec1c1-0adb-4135-bc3a-8fe6db3eb5d6",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "7fe1080d-6345-4333-9e96-b324644b4fa4",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "f22171ba-9425-4bf9-a947-91025da35160",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "a1298bde-a878-4413-8e77-9bb2e6049fa6",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "07291b1b-5f05-4540-9971-b42cb43fc11f",
+                             "studentId":  "25QM1A66E1",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "a12262d6-16f0-4a1a-b536-a09b7f77a361",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T17:49:23.6447617Z"
+                         },
+                         {
+                             "markId":  "391cd7b4-b443-4c0c-b488-c7470a1d2892",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "fa9e4410-9b27-4411-ba84-05db141d0b83",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "32f299cb-1478-4863-a78e-3364e3c55d97",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "6a3802ae-c147-4b74-929f-4ba2a7a1e935",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "5e4237a6-1816-4356-ace3-d8e577e23da8",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "SE_LAB",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T16:43:07.0584490Z"
+                         },
+                         {
+                             "markId":  "521a052f-3c04-43c5-a192-1bb0ae501d45",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "db465c1b-f201-4146-b745-be6a45c3801f",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "47b8fb7b-3160-46d9-ad5e-15b9b5825d94",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "7aed9ac0-8331-47b9-9b99-e78bf33b0f73",
+                             "studentId":  "25QM1A66E2",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "b7e66d6d-9f9b-42da-afd8-2c64663a878f",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:45:13.9274086Z"
+                         },
+                         {
+                             "markId":  "84305903-4352-4e76-bd7d-ac6a472b84ad",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "MATHS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T16:46:32.4687107Z"
+                         },
+                         {
+                             "markId":  "8347db2f-a754-4707-b945-38cc54d1af33",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "f3805593-9efd-4ab3-9689-e5b8f59e94ac",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "9fe74581-4826-495c-9c5a-3853fa19fb1d",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "1e133c1e-2ecc-40c0-a3f3-a143c0457d9a",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "2b93cb8d-0813-4b60-8fa4-7054308976f6",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "9cd10cee-4803-4ad2-96dc-6112a1044d02",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "048a43ca-086c-4c7f-b4d3-af52748a1cb7",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "aa0ebcd7-8338-41e7-92bb-8de46661fa96",
+                             "studentId":  "25QM1A66E3",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "3d0b670c-30f3-4e7a-b010-96921e11a94e",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "DBMS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-02T14:09:10.0383430Z"
+                         },
+                         {
+                             "markId":  "45c276e7-9731-4ff2-a33c-49339afd5824",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "41961931-7e36-464d-b745-d6b5775c9c08",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "b204145d-c008-49bc-9e45-7488f3ddafa5",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "dfa6a7db-0b99-4671-aac5-b51e866cbd0d",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-28T16:33:52.2365696Z"
+                         },
+                         {
+                             "markId":  "fcf518b0-9728-47d9-8e31-fc68b841870d",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-26T19:14:11.3431617Z"
+                         },
+                         {
+                             "markId":  "5758ff64-625b-4d65-98f0-5b88f4d3cceb",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "dd971e3d-107a-4d24-b269-11fd56658b20",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "0699c18c-006a-4ebb-9766-545f92bc5dba",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "4098a465-fc03-4123-8f70-32eddc18efdc",
+                             "studentId":  "25QM1A66E4",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "94b276f4-3f6f-4e81-8cb1-949ed721aea7",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "DBMS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "327ef05a-d163-42d5-9b84-eda13e2d06a3",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T16:46:37.0578395Z"
+                         },
+                         {
+                             "markId":  "ddf7709b-911d-4835-812d-b7c41ec9fdf7",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "64a1a5af-7ad8-459e-bb10-203bf5082049",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "22528d9e-f26d-4ba6-b0da-f1bdb396222d",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "52f211e3-7323-408a-9fdc-d7e8c06c5236",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "9029651e-5539-48cb-b1d6-672f6780f039",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "f9191519-9a65-462b-9b4e-e09104ea09d3",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "16527a4d-3f6e-4963-8977-6415ad8eb033",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "1485a773-abb1-445a-89ff-c6840a906d98",
+                             "studentId":  "25QM1A66E5",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "a9f33649-5371-432d-9ad4-2faeed9b2007",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:45:43.5220115Z"
+                         },
+                         {
+                             "markId":  "7166324a-1f5a-42e3-879e-e45288fecb27",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "e4a3342f-419e-449e-9a24-daf9b9a82936",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "7a5c6bb6-96dd-4f91-86ce-6bea685db76d",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "f5e9ebc0-5b2f-45a8-b10b-b8280f35b41e",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "1cf1efd9-a161-4279-b96b-0c9504ee9a27",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "54af32ab-c40c-4ba5-a389-6756f34923f1",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "13d48175-dd7c-4428-8233-d86078a069c4",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "1c2cd713-5dcc-46c3-9a47-f21b5c7ee040",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "c6d56857-7e72-47e3-a1c5-173ace9a0d80",
+                             "studentId":  "25QM1A66E6",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "6391b01b-82ed-4ac9-bac7-f796cb2fca85",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:46:12.0618833Z"
+                         },
+                         {
+                             "markId":  "830dc866-4195-4e6f-9adf-3d4674908bcb",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "53ab6fb4-1158-49e9-847b-d84f4ff50d00",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "429c6575-85c5-4907-a4b7-b2ec9187c3b2",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "817cecb8-4334-4c22-ac69-2ee319c75c5d",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "7175e13a-3b2a-41a5-8097-d7cf88b7b98b",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "be0bba2a-0adc-41a8-aec2-cecd1db616b0",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "aafc2519-2510-42f0-bdd7-d4291dc2fe18",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "1b574b2c-8bee-454f-adbd-b79420cce777",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "08ac6af6-29c6-4195-b535-1eea52e42e58",
+                             "studentId":  "25QM1A66E7",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "cb769235-dbca-43a1-915e-efa19852a7a3",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:46:36.0236225Z"
+                         },
+                         {
+                             "markId":  "2588993a-fc94-4c8b-8c30-9da2b6f29774",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "a00c590b-e5be-47d5-a427-9869fb18b686",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-27T18:48:07.9902920Z"
+                         },
+                         {
+                             "markId":  "24bbe282-2d26-405d-a441-0d1c4aa5f52d",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "9332cd12-5230-4c3c-890c-a329d109c93a",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "5201b901-aefd-4c68-aec1-dd110947c380",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2295204Z"
+                         },
+                         {
+                             "markId":  "2be52adf-da72-411e-a519-cc9f9a5847cf",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "98db1b8b-3a52-4cf6-9b7a-1e3335d9fd19",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "cef910c1-7612-47c3-a010-81658bc229fc",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "9a9872d0-c13b-4b3e-be01-f20f343b94b9",
+                             "studentId":  "25QM1A66E8",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "8e1baf6a-419f-45ed-bf44-cffdcfc7ea5a",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:46:56.2402424Z"
+                         },
+                         {
+                             "markId":  "b32f6e2e-0cd9-4dde-83ac-406aa240a49c",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "e5d81288-26bc-4501-ae36-835b2393e937",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "57a76c44-be18-4df7-a444-938b3ea03579",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "675160fb-e7f4-48c1-ae43-439c45663478",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "e09a57dc-7fd8-42d2-ab38-68c5811363ef",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2391584Z"
+                         },
+                         {
+                             "markId":  "189b191f-ce92-4519-bac4-67e4437bf1f8",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2408581Z"
+                         },
+                         {
+                             "markId":  "e90ece3c-d5a8-4e04-a81b-2d00fa626576",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2408581Z"
+                         },
+                         {
+                             "markId":  "0899cb98-e640-49a8-8858-9f2c14ee3c53",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2413801Z"
+                         },
+                         {
+                             "markId":  "ba00565b-d3a8-48f6-a2a5-403cc3341cad",
+                             "studentId":  "25QM1A66E9",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2413801Z"
+                         },
+                         {
+                             "markId":  "201a3458-b85f-4eb2-a5cc-77af37b72a6a",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T17:48:20.6619495Z"
+                         },
+                         {
+                             "markId":  "843a5cbe-b1b1-4167-90c1-9b5e28bda9c9",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "da63cd8a-f0ca-4c6e-b171-308e261bc63e",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "fff02678-202c-4896-821d-37ad38674e25",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "bfdd5e75-d93e-4c26-95c0-839aabff6db8",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "85dcdfb0-7b4a-484f-9f92-c4241b25c275",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "4e36cbbd-f105-4097-964a-3fe50c6a3427",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "8ec51196-3469-4d8e-be0d-a4ea10c65d1a",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "b208f0fe-4788-4465-8bed-1498176a5c48",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "7abd9a07-619d-49ea-b084-8cea48bb1204",
+                             "studentId":  "25QM1A66F0",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2419682Z"
+                         },
+                         {
+                             "markId":  "724a1dc8-4a2b-4336-a9a3-c002db3ff9e5",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:51:48.3656955Z"
+                         },
+                         {
+                             "markId":  "cfb43a4d-d4e6-4c70-8fcf-1c650a550140",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2440172Z"
+                         },
+                         {
+                             "markId":  "a98f3c4e-fd25-4705-97eb-0c5b86780eaf",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2440172Z"
+                         },
+                         {
+                             "markId":  "0b092ab7-932f-4a9f-9ea6-e0cc256d31c7",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2440172Z"
+                         },
+                         {
+                             "markId":  "ce48ee9d-1504-4b5a-8c9e-a3a76fca25c3",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2440172Z"
+                         },
+                         {
+                             "markId":  "c7cd5265-e4b9-41c9-9013-f27013ff4216",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2460380Z"
+                         },
+                         {
+                             "markId":  "d69f3f41-15b5-4e2c-b897-2d4f40957231",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2460380Z"
+                         },
+                         {
+                             "markId":  "b07981b5-8f55-4312-bad3-8aa2b8f5f0eb",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2460380Z"
+                         },
+                         {
+                             "markId":  "bf5591f3-1ecb-4b81-986d-0e374f10246f",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2476701Z"
+                         },
+                         {
+                             "markId":  "0481f5c9-412c-4ca0-9e86-9b25a6e2595d",
+                             "studentId":  "25QM1A66F1",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2484670Z"
+                         },
+                         {
+                             "markId":  "2b4718e2-6211-47db-8bd7-dcfc0eab87de",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:51:32.8136151Z"
+                         },
+                         {
+                             "markId":  "c325a898-97de-4eaa-b50d-09488a3789a0",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "979feca7-dae8-4de9-bf64-a3657fd1295f",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "86c527a5-0b89-4939-840f-9b0108ce75d3",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "b7df8e2d-60a2-4aaf-8472-c1cb1db19e8f",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "cab389bc-849e-4be3-9e6a-cba6b2b54f86",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "937fdc7a-b233-4ddb-a289-09cfef4640b3",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "6f44f8cd-66d2-4624-adf0-57788106ead0",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "59c050d6-7b15-409d-85f5-66efd0c11c48",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "949dc949-9624-4f7c-b632-698f0fe16264",
+                             "studentId":  "25QM1A66F2",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2492166Z"
+                         },
+                         {
+                             "markId":  "0c210f23-f3ae-4078-92e7-caffd79d6810",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:51:18.0859302Z"
+                         },
+                         {
+                             "markId":  "81099b5e-1dc1-479f-923f-d85661a0219a",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "16d74b5f-0fde-4a21-811e-59da260bd09c",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "cdaa17da-83d9-4ca7-b7fe-5c7d1d9ec238",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "e2a7e1c8-7680-4703-a9c5-4533930685cf",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "40caed4d-876c-44d6-ac37-9e174aa14211",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "98097c26-4082-4e1e-9794-153fadc35bf1",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "463e4b27-1504-40b9-b5fe-e878b338794e",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "27866035-599f-4722-a933-77ab9d82c57c",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "51a02d09-31b7-4067-af0a-8fa5891b574a",
+                             "studentId":  "25QM1A66F3",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2512390Z"
+                         },
+                         {
+                             "markId":  "c99c797d-1920-44f7-814a-01f6fcb9c2b7",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:51:01.5660851Z"
+                         },
+                         {
+                             "markId":  "127ccba4-c624-416d-a3a1-f37f7a71380e",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2532588Z"
+                         },
+                         {
+                             "markId":  "5bede94d-0e9a-4b04-8f0d-5b681b813f76",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2532588Z"
+                         },
+                         {
+                             "markId":  "9888f840-54e0-4f46-84c0-7ea2934e638b",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2532588Z"
+                         },
+                         {
+                             "markId":  "e4316901-50b3-468f-93c7-c85566e0e5b1",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2532588Z"
+                         },
+                         {
+                             "markId":  "b8cee659-2f11-41bb-99d4-973eb1c31897",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2532588Z"
+                         },
+                         {
+                             "markId":  "50b05f7a-0697-47e8-a3d7-10ceb71fcd0d",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2532588Z"
+                         },
+                         {
+                             "markId":  "be64aa4f-ee02-4662-847c-1f69da065740",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2550200Z"
+                         },
+                         {
+                             "markId":  "47792136-e5e2-4f5b-97ff-015343857585",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2550200Z"
+                         },
+                         {
+                             "markId":  "fdb1b97e-ec2e-47cf-b042-18922898cca3",
+                             "studentId":  "25QM1A66F4",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2550200Z"
+                         },
+                         {
+                             "markId":  "863de887-c8de-4543-a8b4-cb1910d78603",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:50:47.4957378Z"
+                         },
+                         {
+                             "markId":  "cc8f4bdf-eebf-41fe-9de8-2fe4226aca73",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2550200Z"
+                         },
+                         {
+                             "markId":  "9bfef93c-7d5d-496b-8cc6-bd537ca49edf",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2550200Z"
+                         },
+                         {
+                             "markId":  "a28c95af-820f-415a-972e-384d4ab18377",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2570350Z"
+                         },
+                         {
+                             "markId":  "244bfd14-0d65-4e70-84bd-2b395ad601bf",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2570350Z"
+                         },
+                         {
+                             "markId":  "1be32f5c-2dee-4163-badf-6a360aef880c",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2570350Z"
+                         },
+                         {
+                             "markId":  "d53a00c8-e021-4db2-b60b-9659dbaf9b79",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2570350Z"
+                         },
+                         {
+                             "markId":  "ce91e7e8-8de7-4974-9c2a-433144bc2ddc",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2570350Z"
+                         },
+                         {
+                             "markId":  "72179ed3-a478-4003-9386-82007c1e1112",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "ed08cbd1-08b5-4b6b-be80-4a92c4a7df8a",
+                             "studentId":  "25QM1A66F5",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "bf1bdcf6-2541-466d-86a3-3905e82ec311",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:50:26.4338660Z"
+                         },
+                         {
+                             "markId":  "3027b63a-5b16-400b-9ec6-286faf9ad79e",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "d6c09f37-6ba1-4296-b6d7-a60727724ce0",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "9181bb81-bcb5-4c6e-844f-54a93987252f",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "89c4595c-7306-4a57-8498-55970aed4912",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "e9460eb2-698d-434d-8e3b-71a8e0fe53fd",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-26T19:13:56.4303695Z"
+                         },
+                         {
+                             "markId":  "b82543fd-fab4-474f-b09c-3c6f42df4780",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "a3767d47-f7da-45fe-8325-c95ca96149c1",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "7a48e98d-eea2-4939-bcf9-7075997524a8",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "50219dc4-4e6f-4b9c-ad85-24271af29fbe",
+                             "studentId":  "25QM1A66F6",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "eebd5364-18b0-48d9-aef9-c5626bf3cd3f",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:50:10.3120170Z"
+                         },
+                         {
+                             "markId":  "57cbb4b0-6cf4-4a61-a944-515af432b76c",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "3920cd54-0fd1-497f-aec1-f6f70c14381a",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2577582Z"
+                         },
+                         {
+                             "markId":  "72bbdb86-9df3-417b-a999-4007a80ccb38",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "6164c793-9ad2-4ba3-956a-11ba59c6cbdc",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "df4069ef-4586-4208-9004-790af0441b24",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "8ffec2bb-ec18-487f-9886-b7bf2f7839af",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "7d98a433-a7b5-432f-803a-825005a14291",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "1dd0b950-bd7f-465c-8a5c-0a92b5136a5f",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "81129b20-e9bc-4dfc-8614-7c738d650fa6",
+                             "studentId":  "25QM1A66F7",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "c9f08c39-2cf7-45c4-bfa4-b09a36e215ad",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:49:52.6074435Z"
+                         },
+                         {
+                             "markId":  "bc160d3c-eafc-4271-b8ee-1b6c9eae5341",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "72d648c6-5f98-45a1-9bbc-c45351a34795",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "7f11b690-9f01-4dc5-baaa-f2852e1e4732",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "af6366b2-058d-4cdb-8d90-8188ea88f546",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "9deb8741-13ff-4ce9-8c08-00a549a8a9a9",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "a8bb5ca6-c565-472a-9077-ce4082370a67",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "e09ce7ee-35f1-49d3-a573-0642afeb51f9",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "777aad93-8dc8-4f9b-b9d9-09aa09d53201",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "9a7d536f-7e94-4f43-8e44-305ad3eafb32",
+                             "studentId":  "25QM1A66F8",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2606520Z"
+                         },
+                         {
+                             "markId":  "695eda71-ab8a-49a6-bbf7-d6902697cbf4",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:49:35.0994021Z"
+                         },
+                         {
+                             "markId":  "7f5a27c3-86a8-4826-871a-e9096eb346c1",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "0abd017c-6d50-472c-97ed-df47631cfb2f",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "5b119221-80df-439d-95bc-3b791e2a2ba7",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "6bb1a90f-1428-4646-8c95-4259fe331c49",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "bb566e17-e30d-47e7-9853-188968297d8b",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "28b8d2bb-ec9d-456f-a1a0-033daf54c54e",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "fadaf0c1-7f75-4d12-bae2-5a7af115dc4b",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "14f28cec-a57f-4b4c-8e3e-14d5df965a64",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "562a10db-2c8f-4465-893b-7a95f57d71e9",
+                             "studentId":  "25QM1A66F9",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "0ce2cb8d-809e-4103-9fbb-3d117365795b",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:49:22.0135671Z"
+                         },
+                         {
+                             "markId":  "8c732c29-dc3b-463c-8c2e-59180ad0c73c",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "e7ad932b-3baf-4eb0-963f-20b0ed0d830c",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "c0bce81e-7c53-4c9f-93e1-9d0960271a7f",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "3e2a5f04-a5a1-4c3b-9407-cde320b69410",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "a16adcca-3507-41f5-954b-0e4f669965e3",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "6151e6a9-c614-455b-bf7e-4891f77afde5",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "976e0bb3-9582-4700-9731-9408e3ab00bf",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "d68d816c-b5cb-4636-aeb1-af43aeb5ce8c",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "37d3271b-03da-4b84-ad7f-413315c0ced9",
+                             "studentId":  "25QM1A66G0",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "f660460f-e639-4ade-b616-7c06183b0db8",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:49:07.5225082Z"
+                         },
+                         {
+                             "markId":  "dbbf91ed-e936-400d-a0e9-89e3536040e5",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "20571007-2ddf-49e4-8d1e-a111ff5037e6",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "0ac71651-515a-499e-8712-508f1d2414ff",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "5ed5bb02-58d3-4806-883c-7650529df338",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "031206bf-fff6-4610-9707-db8767a059cb",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "b462f8ed-ecb3-482e-ae1d-bc9a92e90182",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "2a5fd0b7-90a9-434d-abb8-d743621b077b",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "d6f3c2f5-5f14-4b4e-89c3-ae9a9c02b589",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "ebd50f43-f349-4469-ab2f-de78c412b2d4",
+                             "studentId":  "25QM1A66G1",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "2a55cdca-2573-4d29-8a0d-1bb1a44ae22e",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "DBMS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-02T16:45:57.2287913Z"
+                         },
+                         {
+                             "markId":  "64325a63-b95e-4e7e-bb78-ebcbbe660454",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "8a18699c-f2e2-46af-8235-143c5a3c59fd",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "b0cc99c2-c97c-42cf-baa3-af4b23601f8e",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "41c11013-360d-4411-a03c-0e3862a45fa1",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "32620959-42d4-4b53-a899-918afe232bcf",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "fb9df6d9-5cf5-4130-9964-871b0ad46e5b",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "a32da2c4-1853-4d91-970b-665b2dd2cfb1",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "5bd0d67e-d0e6-4d4e-92d6-9a8adc8b2060",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "2c3104ec-5fb2-47be-899d-ce10d64fb761",
+                             "studentId":  "25QM1A66G2",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "4016eff7-21b9-446c-8b6a-2b4175e74d72",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:48:49.4829994Z"
+                         },
+                         {
+                             "markId":  "bc79261a-7f5c-4bcc-a488-3bb78f1bf534",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T16:46:52.6779398Z"
+                         },
+                         {
+                             "markId":  "8d768394-9c3f-4f31-bb04-9fb87a58a0ae",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "0f6cafa9-6cdd-4ec6-ba60-89a65340994e",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2633732Z"
+                         },
+                         {
+                             "markId":  "7a08e70a-6718-40cf-881c-91977f5b87b0",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "7d05a9e0-5505-411d-bdb9-d56b4fdf6915",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "bb1b3f5e-e6b8-4830-afed-0d55fb9ac49a",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "55e37bb2-e5b7-4829-bc4a-39d85239acb3",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "846b729b-f7e9-47a8-a6dc-d36c32327c27",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "d15c847d-6de7-4930-9592-970ce8f4699f",
+                             "studentId":  "25QM1A66G3",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "8a91dc98-9870-4289-b5a8-9093b8d4ae0a",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:48:36.3850769Z"
+                         },
+                         {
+                             "markId":  "cd59cb23-a8e7-43fd-9954-7e0041be47a5",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "556a4c5d-c1bc-4f89-bf5d-bdb0e79c5a26",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "d16dec3a-7186-486a-9031-a9c139782e64",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "16926eed-5071-4629-8de0-4713692492b4",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "5b86e5d8-1ba1-4477-8138-f0175a99bed1",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "130a94fe-a449-44f4-87c4-a452fe7c3430",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "ff80e636-7947-4448-b2d3-4b5be5d0aaa4",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "4424d9b1-dae8-4a7a-b188-b370936a034e",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "d4f1a5af-b3eb-4fe0-ad5a-bd183404da2c",
+                             "studentId":  "25QM1A66G4",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "620aeba6-8613-4df7-bf73-e9b03c685256",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:48:09.1410566Z"
+                         },
+                         {
+                             "markId":  "1fe91529-f74b-414f-8504-2221552aec4a",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "a44ff46e-781a-4c06-952f-fe56b215f43d",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "6865c406-5648-4bfb-ab4b-6574503c5f2b",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "ec73a3ac-91d0-4561-a41c-9bd005a62831",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "665d8cac-0595-453f-90a9-ea1b1c8ac6bb",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "e3bdd21d-977a-4ece-9791-af82c9c36216",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "bca33701-c472-42a0-9c74-b98a28fb0de4",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "9cbfbba2-76d8-4448-85db-3fd76a919c24",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "7b35122f-c402-4c6d-a161-c7ee7e2c15bb",
+                             "studentId":  "25QM1A66G5",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "75f4db33-244e-4a97-8963-370d07472b7c",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:47:54.3809460Z"
+                         },
+                         {
+                             "markId":  "771f83fa-d34d-4045-b8b3-c244de7e44af",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "4e46a5a3-3d4d-445c-9f05-4fce371a85f6",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "017506e1-1389-4418-9f5f-78257c2f0ddf",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "b65d3c16-2345-4470-b0f6-785e88cad0fe",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "8cbef53a-28a6-44dc-9f07-9cf05391e089",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "fb6236b7-ab87-43dc-bca3-9791bc9436a0",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "1998c949-0bf2-460a-899a-3c5c6bbb2e17",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "5e64b00d-d567-4404-a02b-32d756c128ba",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "a5aea47e-bd4e-4661-b752-cf29db577dcc",
+                             "studentId":  "25QM1A66G6",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "32f3c5aa-9788-4577-a7e1-ea54b06f549a",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:47:36.7670150Z"
+                         },
+                         {
+                             "markId":  "2a80da87-869c-4b87-af1a-b32b9130cb7f",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "228ed6b7-daa0-4a79-972e-0f4d317ef644",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "350201c8-d236-44bd-a9a8-ec532a327cd5",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "d7530fbe-bd0c-45d0-8fde-7f4d5c0861cd",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "fe5bbfa2-66b6-45cb-8bc7-a447423e6a0e",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "238f2fc1-2661-4d79-af24-bd1873b747e5",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "2c1c41aa-7488-4953-9a4a-8426621a84c5",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "b95fbdd4-fc26-4461-83ab-9db3ad3ac963",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "961890bd-cf01-4644-887f-11c8168010d0",
+                             "studentId":  "25QM1A66G7",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "0c9210b2-365b-4c90-93ac-7cb3a29f03b1",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-11T12:47:22.4717287Z"
+                         },
+                         {
+                             "markId":  "db8c7595-531b-4c9e-8bc3-80f819a78adf",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "69ea1758-a81e-4848-a64f-512be1e02507",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "d7eefeb1-ca71-4ab1-a7cd-2a0ee28fe31c",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "4d9d10c4-1610-4b77-99fb-8bc636cf0085",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "4b3ee7ee-8b9a-4f22-a791-3707115251f1",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "eec2f3c5-05fb-429b-b9aa-a8573329c70f",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "def8c4ab-4cd8-47ef-8f86-48ac5f40afa1",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "1fe2ff24-65a8-4a7d-b2e7-cfae709cf2db",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "e38069f6-5ff5-4127-8c21-8f67eba19170",
+                             "studentId":  "25QM1A66G8",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "2c14f8bc-05e1-4db8-95ff-eb5dedde9189",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "DBMS",
+                             "totalMarks":  null,
+                             "status":  "Not Updated",
+                             "evalStatus":  "Not Updated",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-10T17:41:14.7019179Z"
+                         },
+                         {
+                             "markId":  "4b0ff45d-513a-412e-ad7e-dd52d3e65e90",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "MATHS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "9e30dcca-3c64-4431-91d3-9ae3a0f033b4",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "OOPS",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "a1fe2947-441f-4a44-b379-0277a4993bd5",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "SE",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "678e61f6-4ca8-4236-9ff9-9fd4183d1cad",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "COA",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "b6e3f0a0-3432-4108-aec0-0d60753a7d46",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "SE_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-11-01T16:11:06.6013216Z"
+                         },
+                         {
+                             "markId":  "4f17452c-f13b-45b5-9fbd-7a924e089f3a",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "MATHS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "aa027238-cec2-4089-9f95-e9e8f53a06b7",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "OOPS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "0012fa62-e1ab-4ab2-9a1d-212bd282450d",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "SD_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         },
+                         {
+                             "markId":  "36e85357-caae-42f0-b92c-d19f9b9533a9",
+                             "studentId":  "25QM1A66G9",
+                             "subjectId":  "DBMS_LAB",
+                             "internalMarks":  null,
+                             "externalMarks":  null,
+                             "updatedAt":  "2026-10-21T14:13:40.2715931Z"
+                         }
+                     ]
+}

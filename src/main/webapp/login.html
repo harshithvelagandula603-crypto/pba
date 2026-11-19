@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign In - Academic Result Input Validator. Secure role-based portal access for students and faculty.">
+  <title>Sign In - Academic Result Input Validator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-body">
+  <!-- Accessibility Skip Link -->
+  <a href="#login-card" class="skip-link">Skip to login form</a>
+
+  <!-- Minimal Brand Header Bar -->
+  <header class="login-top-bar">
+    <div class="container login-top-inner">
+      <a href="index.html" class="brand-link" aria-label="Academic Result Input Validator Home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </span>
+        <span>Academic Result Input Validator</span>
+      </a>
+
+      <a href="index.html" class="back-home-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Home</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Centered Login Main Area -->
+  <main class="login-main-container">
+    <div id="login-card" class="login-card">
+      <div class="login-card-header">
+        <h1 class="login-card-title">Welcome Back</h1>
+        <p class="login-card-subtitle">Sign in to access your academic account.</p>
+      </div>
+
+      <!-- Segmented Role Selector -->
+      <div class="role-segmented-control" role="tablist" aria-label="Select Account Role">
+        <button id="roleTabStudent" class="role-tab active" type="button" role="tab" aria-selected="true" aria-controls="loginForm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Student Login</span>
+        </button>
+
+        <button id="roleTabFaculty" class="role-tab" type="button" role="tab" aria-selected="false" aria-controls="loginForm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Faculty Login</span>
+        </button>
+      </div>
+
+      <!-- Staged Feedback Banner -->
+      <div id="authFeedback" class="auth-feedback-box" role="alert" aria-live="polite">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <span id="authFeedbackText"></span>
+      </div>
+
+      <!-- Authentication Form -->
+      <form id="loginForm" method="POST" action="auth" novalidate autocomplete="off">
+        <!-- Hidden Role Attribute -->
+        <input type="hidden" id="roleInput" name="role" value="student">
+
+        <!-- Identifier Group -->
+        <div class="form-group" id="identifierGroup">
+          <label id="identifierLabel" for="identifierInput" class="form-label">Student ID</label>
+          <div class="input-wrapper">
+            <input 
+              type="text" 
+              id="identifierInput" 
+              name="academicIdentifier" 
+              class="form-input" 
+              placeholder="" 
+              autocomplete="off"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+              data-lpignore="true"
+              data-form-type="other"
+              value=""
+              required
+            >
+          </div>
+          <span id="identifierError" class="field-error-message"></span>
+        </div>
+
+        <!-- Registered Email Group (Faculty Authentication Only) -->
+        <div class="form-group" id="emailGroup" style="display: none;">
+          <label id="emailLabel" for="emailInput" class="form-label">Registered Email Address</label>
+          <div class="input-wrapper">
+            <input 
+              type="email" 
+              id="emailInput" 
+              name="facultyEmail" 
+              class="form-input" 
+              placeholder="" 
+              autocomplete="off"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+              data-lpignore="true"
+              data-form-type="other"
+              value=""
+            >
+          </div>
+          <span id="emailError" class="field-error-message"></span>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+          <span id="submitBtnText">Access Student Dashboard</span>
+        </button>
+      </form>
+
+      <!-- Security Notice -->
+      <div class="login-security-notice" id="securityNotice">
+        Demonstration Mode: Student ID-only access is configured for demonstration purposes. In a real college deployment, secure credential authentication is required. Faculty accounts are authenticated using registered Faculty ID and institutional email address.
+      </div>
+    </div>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

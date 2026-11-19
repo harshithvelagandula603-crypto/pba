@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Academic Result Dashboard - Academic Result Input Validator.">
+  <title>Student Result Dashboard - Academic Result Input Validator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#dashboard-main" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navigation Bar -->
+  <header class="dashboard-top-bar">
+    <div class="container dashboard-top-inner">
+      <a href="index.html" class="brand-link" aria-label="Academic Result Input Validator Home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </span>
+        <span>Academic Result Input Validator</span>
+      </a>
+
+      <div class="dashboard-user-info">
+        <div id="studentPill" class="user-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span id="studentPillText">Loading Student...</span>
+        </div>
+        <button id="logoutBtn" class="btn-logout" type="button" aria-label="Sign Out">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dashboard Main Content -->
+  <main id="dashboard-main" class="dashboard-main">
+    <div class="container">
+      <!-- Demonstration Security Advisory Banner -->
+      <div class="demo-security-banner" role="alert">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <div>
+          <strong>Demonstration Access Notice:</strong> Access via Student ID alone is configured for demonstration purposes. In a real institutional deployment, multi-factor authentication or university single sign-on (SSO) credentials must be enforced. Student records are securely isolated to your active session.
+        </div>
+      </div>
+
+      <!-- Student Profile Card -->
+      <section class="dashboard-card" aria-labelledby="profileCardTitle">
+        <div class="card-title-row">
+          <div>
+            <h1 id="profileCardTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <polyline points="17 11 19 13 23 9"></polyline>
+              </svg>
+              Student Academic Profile
+            </h1>
+            <p class="card-subtitle">Verified institutional record verified against persistent database storage.</p>
+          </div>
+          <span id="enrollmentStatusBadge" class="badge badge-complete">Enrolled Candidate</span>
+        </div>
+
+        <div class="aggregate-grid">
+          <div class="aggregate-item">
+            <div class="aggregate-label">Student Name</div>
+            <div id="studentNameDisplay" class="aggregate-value">---</div>
+          </div>
+          <div class="aggregate-item">
+            <div class="aggregate-label">Student ID (Roll No)</div>
+            <div id="studentIdDisplay" class="aggregate-value">---</div>
+          </div>
+          <div class="aggregate-item">
+            <div class="aggregate-label">Curricular Subjects</div>
+            <div id="subjectCountDisplay" class="aggregate-value">10 Subjects</div>
+          </div>
+          <div class="aggregate-item">
+            <div class="aggregate-label">Evaluation Progress</div>
+            <div id="progressDisplay" class="aggregate-value">Checking...</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subject-Wise Evaluation Table Card -->
+      <section class="dashboard-card" aria-labelledby="subjectsCardTitle">
+        <div class="card-title-row">
+          <div>
+            <h2 id="subjectsCardTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              Subject-Wise Academic Record
+            </h2>
+            <p class="card-subtitle">Each subject is evaluated in two components: Internal (max 40) and External (max 60). The maximum total for each subject is 100 marks. Pass mark rule: 35 marks or above out of 100 = PASS; below 35 marks = FAIL. If either component is missing, "Result Pending" is displayed and missing marks are preserved as NULL ("Not Updated").</p>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" aria-label="Subject Marks Table">
+            <thead>
+              <tr>
+                <th scope="col">Subject Code</th>
+                <th scope="col">Subject Name</th>
+                <th scope="col">Internal (Max 40)</th>
+                <th scope="col">External (Max 60)</th>
+                <th scope="col">Total (Max 100)</th>
+                <th scope="col">Result Status</th>
+              </tr>
+            </thead>
+            <tbody id="subjectsTableBody">
+              <tr>
+                <td colspan="6" style="text-align: center; color: var(--color-text-secondary); padding: 24px;">
+                  Retrieving validated subject marks from server...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Aggregate Result Summary Card -->
+      <section class="dashboard-card" aria-labelledby="aggregateCardTitle">
+        <div class="card-title-row">
+          <div>
+            <h2 id="aggregateCardTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              Aggregate Result & Performance
+            </h2>
+            <p class="card-subtitle">Calculated automatically only when evaluations for all required subjects are finalized.</p>
+          </div>
+        </div>
+
+        <div class="aggregate-grid">
+          <div class="aggregate-item">
+            <div class="aggregate-label">Total Marks</div>
+            <div id="totalMarksDisplay" class="aggregate-value withheld">Result Pending</div>
+            <div class="aggregate-note">Sum of (Internal + External) across all 10 subjects. Available when all components entered.</div>
+          </div>
+
+          <div class="aggregate-item">
+            <div class="aggregate-label">Percentage</div>
+            <div id="percentageDisplay" class="aggregate-value withheld">Result Pending</div>
+            <div class="aggregate-note">Calculated on standard 100-point scale per subject (Total / 1000 &times; 100).</div>
+          </div>
+
+          <div class="aggregate-item">
+            <div class="aggregate-label">Academic Standing</div>
+            <div id="resultStatusDisplay" class="aggregate-value withheld">Result Pending</div>
+            <div id="resultStatusNote" class="aggregate-note">Pass/Fail rules not yet configured. Results will be declared once exact institutional rules are provided.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: AI Analysis (Student) -->
+      <section id="section-improvement-suggestions" class="dashboard-card" aria-labelledby="suggestionsCardTitle" style="margin-top: 28px;">
+        <div class="card-title-row">
+          <div>
+            <h2 id="suggestionsCardTitle" class="card-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+              AI Analysis
+            </h2>
+            <p class="card-subtitle">
+              Your individual academic performance analysis: subject-wise marks, strong subjects, subjects needing improvement, personalized study recommendations, and practical action steps — based only on your own validated records.
+            </p>
+          </div>
+        </div>
+
+        <div id="improvementSuggestionsContainer" style="margin-top: 14px;">
+          <div style="padding: 24px; text-align: center; color: var(--color-text-secondary); font-size: 0.875rem;">
+            Analyzing your academic record for personalized recommendations...
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Minimal Brand Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>&copy; Academic Result Input Validator. Student ID-isolated session access.</p>
+    </div>
+  </footer>
+
+  <script src="js/student-dashboard.js"></script>
+</body>
+</html>

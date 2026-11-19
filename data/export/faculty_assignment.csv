@@ -1,0 +1,11 @@
+faculty_id,email,subject_id,subject_code,subject_name
+FAC101,FAC101@edu.in,DBMS,DBMS,Database Management Systems
+FAC101,FAC101@edu.in,SE_LAB,SE Lab,Software Engineering Laboratory
+FAC102,FAC102@edu.in,MATHS,Maths,Mathematics
+FAC102,FAC102@edu.in,MATHS_LAB,Maths Lab,Mathematics Laboratory
+FAC103,FAC103@edu.in,OOPS,OOPs,Object-Oriented Programming
+FAC104,FAC104@edu.in,COA,COA,Computer Organization and Architecture
+FAC105,FAC105@edu.in,SE,SE,Software Engineering
+FAC106,FAC106@edu.in,SD_LAB,SD Lab,Software Development Laboratory
+FAC107,FAC107@edu.in,OOPS_LAB,OOPs Lab,Object-Oriented Programming Laboratory
+FAC108,FAC108@edu.in,DBMS_LAB,DBMS Lab,Database Management Systems Laboratory

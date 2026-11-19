@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter / Update Subject Marks - Academic Result Input Validator</title>
+  <meta name="description" content="Institutional faculty grade entry terminal for internal and external marks input validation and database updates.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Page-specific refinements matching institutional design tokens */
+    .marks-page-container {
+      padding: 32px 0 64px;
+    }
+
+    .page-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .btn-back-dashboard {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background-color: var(--color-bg-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    .btn-back-dashboard:hover {
+      background-color: #E6EDF5;
+      color: var(--color-primary-hover);
+      transform: translateX(-2px);
+    }
+
+    .marks-layout-grid {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    @media (max-width: 992px) {
+      .marks-layout-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .entry-card {
+      background: var(--color-bg-main);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .entry-card-header {
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .entry-card-title {
+      color: var(--color-primary);
+      font-size: 1.25rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .entry-card-desc {
+      color: var(--color-text-secondary);
+      font-size: 0.85rem;
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 6px;
+    }
+
+    .form-hint {
+      font-size: 0.75rem;
+      color: var(--color-text-secondary);
+      margin-top: 4px;
+      display: block;
+    }
+
+    .form-control-select, .form-control-input {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      color: var(--color-text-main);
+      background-color: var(--color-bg-main);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+      box-sizing: border-box;
+    }
+
+    .form-control-select:focus, .form-control-input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
+    }
+
+    .form-control-input.is-invalid {
+      border-color: var(--color-error);
+      background-color: var(--color-error-bg);
+    }
+
+    .field-error-msg {
+      color: var(--color-error);
+      font-size: 0.78125rem;
+      font-weight: 600;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .field-error-msg.visible {
+      display: block;
+    }
+
+    .student-badge-card {
+      background-color: var(--color-bg-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .student-badge-card.active {
+      display: block;
+    }
+
+    .student-badge-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-secondary);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .student-badge-name {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    .student-badge-meta {
+      font-size: 0.8125rem;
+      color: var(--color-text-secondary);
+      margin-top: 2px;
+    }
+
+    .marks-split-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .total-display-box {
+      background: #F8FAFC;
+      border: 1px solid #CBD5E1;
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .total-display-label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .total-display-sub {
+      font-size: 0.75rem;
+      color: var(--color-text-secondary);
+    }
+
+    .total-display-score {
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    .btn-submit-marks {
+      width: 100%;
+      padding: 12px 20px;
+      background-color: var(--color-primary);
+      color: var(--color-btn-text);
+      font-weight: 700;
+      font-size: 0.9375rem;
+      border-radius: var(--radius-md);
+      transition: background-color var(--transition-fast), transform var(--transition-fast);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-submit-marks:hover:not(:disabled) {
+      background-color: var(--color-primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-submit-marks:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    /* Step 9: Action button pair */
+    .btn-save-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .btn-step-save {
+      padding: 12px 14px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all var(--transition-fast);
+      border: 1px solid transparent;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .btn-save-internal-action {
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .btn-save-internal-action:hover:not(:disabled) {
+      background-color: var(--color-primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-save-external-action {
+      background-color: #1E3A5F;
+      color: #FFFFFF;
+    }
+
+    .btn-save-external-action:hover:not(:disabled) {
+      background-color: #162C47;
+      transform: translateY(-1px);
+    }
+
+    .btn-step-save:disabled {
+      background-color: #E2E8F0;
+      color: #94A3B8;
+      border-color: #CBD5E1;
+      cursor: not-allowed;
+      transform: none !important;
+      box-shadow: none;
+    }
+
+    .lock-banner {
+      background-color: #FEF3C7;
+      border: 1px solid #FCD34D;
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      font-size: 0.8125rem;
+      color: #92400E;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      line-height: 1.4;
+    }
+
+    .btn-reset-form {
+      width: 100%;
+      margin-top: 10px;
+      padding: 9px 16px;
+      background-color: transparent;
+      color: var(--color-text-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      transition: all var(--transition-fast);
+    }
+
+    .btn-reset-form:hover {
+      background-color: var(--color-bg-light);
+      color: var(--color-primary);
+    }
+
+    .alert-banner {
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      margin-top: 18px;
+      display: none;
+      align-items: flex-start;
+      gap: 12px;
+      line-height: 1.5;
+    }
+
+    .alert-banner.visible {
+      display: flex;
+    }
+
+    .alert-banner.success {
+      background-color: #E8F5E9;
+      border: 1px solid #A5D6A7;
+      color: #1B5E20;
+    }
+
+    .alert-banner.error {
+      background-color: var(--color-error-bg);
+      border: 1px solid var(--color-error-border);
+      color: var(--color-error);
+    }
+
+    .badge-subject-code {
+      display: inline-block;
+      padding: 2px 7px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background-color: #E8EEF5;
+      color: var(--color-primary);
+      border: 1px solid #CAD6E2;
+      border-radius: var(--radius-sm);
+      letter-spacing: 0.02em;
+    }
+
+    .search-filter-box {
+      margin-bottom: 14px;
+      display: flex;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navigation Bar -->
+  <header class="faculty-top-bar" role="banner">
+    <div class="container faculty-top-inner">
+      <div class="brand-group">
+        <a href="faculty-dashboard.html" class="brand-link" aria-label="Faculty Dashboard Home">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          <span class="brand-text">Academic Result Input Validator</span>
+        </a>
+        <span class="brand-role-chip" aria-label="System Role">Faculty Terminal</span>
+      </div>
+
+      <div class="faculty-user-actions">
+        <span class="faculty-user-badge" id="facultyUsernameDisplay" title="Active Authenticated Faculty Account">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span id="facultyUsername">faculty</span>
+        </span>
+
+        <a href="faculty-dashboard.html" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.8125rem;">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 4px;">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          Dashboard
+        </a>
+
+        <button id="btnLogout" class="btn btn-logout" type="button" aria-label="Sign out of faculty session">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="mainContent" class="marks-page-container">
+    <div class="container">
+
+      <!-- Navigation & Page Title Row -->
+      <div class="page-nav-bar">
+        <div>
+          <a href="faculty-dashboard.html" class="btn-back-dashboard" id="backToDashboardLink">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back to Faculty Dashboard
+          </a>
+          <h1 style="color: var(--color-primary); font-size: 1.625rem; font-weight: 700; margin-top: 10px; display: flex; align-items: center; gap: 10px;">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+            Enter / Update Subject Marks
+          </h1>
+        </div>
+
+        <!-- Institutional Constraint Badge -->
+        <div style="background-color: #F3F6FA; border: 1px solid #DCE3EA; border-radius: var(--radius-md); padding: 10px 16px; font-size: 0.8125rem; color: #456B91; text-align: right;">
+          <div><strong>Internal Assessment:</strong> 0 &ndash; 40 Marks (Max 40)</div>
+          <div><strong>External Examination:</strong> 0 &ndash; 60 Marks (Max 60)</div>
+          <div style="color: #64748B; font-size: 0.75rem; margin-top: 2px;">Total: 100 Marks &bull; Missing values stored as NULL</div>
+        </div>
+      </div>
+
+      <!-- Two-Column Layout -->
+      <div class="marks-layout-grid">
+
+        <!-- Left Column: Form Card -->
+        <section class="entry-card" aria-labelledby="formHeading">
+          <div class="entry-card-header">
+            <h2 id="formHeading" class="entry-card-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon>
+                <line x1="3" y1="22" x2="21" y2="22"></line>
+              </svg>
+              Mark Entry Form
+            </h2>
+            <p class="entry-card-desc">
+              Select student and subject to save or update academic evaluation marks.
+            </p>
+          </div>
+
+          <form id="marksEntryForm" novalidate>
+
+            <!-- 1. Student Selection by ID or Name -->
+            <div class="form-group">
+              <label for="studentSelect" class="form-label">
+                Select Student <span style="color: var(--color-error); font-weight: 700;">*</span>
+              </label>
+              <div class="search-filter-box">
+                <input type="text" id="studentFilterInput" class="form-control-input" placeholder="Type to filter students by ID or Name..." aria-label="Filter student list">
+              </div>
+              <select id="studentSelect" class="form-control-select" required aria-required="true" aria-describedby="studentSelectHint studentSelectError">
+                <option value="">-- Choose a Registered Student --</option>
+              </select>
+              <span id="studentSelectHint" class="form-hint">Loaded dynamically from the institutional MySQL database.</span>
+              <div id="studentSelectError" class="field-error-msg" role="alert">Please select a valid student.</div>
+            </div>
+
+            <!-- Selected Student Info Card -->
+            <div id="selectedStudentCard" class="student-badge-card" aria-live="polite">
+              <div class="student-badge-title">Selected Student Profile</div>
+              <div class="student-badge-name" id="selectedStudentNameDisplay">---</div>
+              <div class="student-badge-meta">
+                Student ID: <strong id="selectedStudentIdDisplay">---</strong>
+              </div>
+            </div>
+
+            <!-- 2. Subject Selection (Faculty Assigned Subjects) -->
+            <div class="form-group">
+              <label for="subjectSelect" class="form-label">
+                Select Assigned Subject <span style="color: var(--color-error); font-weight: 700;">*</span>
+              </label>
+              <select id="subjectSelect" class="form-control-select" required aria-required="true" aria-describedby="subjectSelectHint subjectSelectError">
+                <option value="">-- Choose One of Your Assigned Subjects --</option>
+              </select>
+              <span id="subjectSelectHint" class="form-hint">Displays your assigned subjects from the institutional database.</span>
+              <div id="subjectSelectError" class="field-error-msg" role="alert">Please select a subject.</div>
+            </div>
+
+            <!-- 3. Marks Fields: Internal & External Split -->
+            <div class="marks-split-row">
+              <!-- Internal Marks Field -->
+              <div class="form-group">
+                <label for="internalMarksInput" class="form-label">
+                  Internal Marks <span style="font-weight: 400; color: var(--color-text-secondary);">(Max 40)</span>
+                </label>
+                <input 
+                  type="number" 
+                  id="internalMarksInput" 
+                  name="internalMarks" 
+                  class="form-control-input" 
+                  min="0" 
+                  max="40" 
+                  step="1" 
+                  placeholder="0 &ndash; 40 (or empty)"
+                  aria-describedby="internalMarksHint internalMarksError"
+                >
+                <span id="internalMarksHint" class="form-hint">0 is valid score; empty = NULL.</span>
+                <div id="internalMarksError" class="field-error-msg" role="alert">Must be an integer between 0 and 40.</div>
+              </div>
+
+              <!-- External Marks Field (Step 9 Stage B: Disabled until internal saved) -->
+              <div class="form-group">
+                <label for="externalMarksInput" class="form-label">
+                  External Marks <span style="font-weight: 400; color: var(--color-text-secondary);">(Max 60)</span>
+                </label>
+                <input 
+                  type="number" 
+                  id="externalMarksInput" 
+                  name="externalMarks" 
+                  class="form-control-input" 
+                  min="0" 
+                  max="60" 
+                  step="1" 
+                  placeholder="🔒 Save internal marks first"
+                  disabled
+                  aria-describedby="externalMarksHint externalMarksError"
+                >
+                <span id="externalMarksHint" class="form-hint">0 is valid score; empty = NULL.</span>
+                <div id="externalMarksError" class="field-error-msg" role="alert">Must be an integer between 0 and 60.</div>
+              </div>
+            </div>
+
+            <!-- External Lock Banner (Step 9 Stage B) -->
+            <div id="externalLockBanner" class="lock-banner" role="status" style="display: flex;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span><strong>Internal-First Rule:</strong> Enter and save internal marks (0&ndash;40) first. External marks are locked until internal marks are recorded in the database.</span>
+            </div>
+
+            <!-- 4. Calculated Total Display -->
+            <div class="total-display-box" aria-live="polite">
+              <div>
+                <div class="total-display-label">Total Subject Score</div>
+                <div class="total-display-sub" id="totalCalcExplanation">Calculated only when both components are entered</div>
+              </div>
+              <div class="total-display-score" id="totalMarksScoreDisplay">-- / 100</div>
+            </div>
+
+            <!-- Action Buttons: Step 9 Separate Saves -->
+            <div class="btn-save-pair">
+              <button type="button" id="btnSaveInternal" class="btn-step-save btn-save-internal-action">
+                💾 Save Internal Marks
+              </button>
+              <button type="button" id="btnSaveExternal" class="btn-step-save btn-save-external-action" disabled>
+                💾 Save External Marks
+              </button>
+            </div>
+
+            <!-- Form Submit (Hidden legacy fallback) -->
+            <button type="submit" id="btnSaveMarks" class="btn-submit-marks" style="display: none;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                <polyline points="7 3 7 8 15 8"></polyline>
+              </svg>
+              <span id="btnSubmitText">Save / Update Marks</span>
+            </button>
+
+            <button type="button" id="btnResetForm" class="btn-reset-form">
+              Clear Form / Reset Fields
+            </button>
+
+            <!-- Alert Banner -->
+            <div id="formAlertBanner" class="alert-banner" role="alert">
+              <svg id="alertIcon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"></svg>
+              <div id="alertMessage" style="flex: 1;"></div>
+            </div>
+
+          </form>
+        </section>
+
+        <!-- Right Column: Student Curricular Evaluation Table -->
+        <section class="dashboard-card" style="margin-bottom: 0;" aria-labelledby="rosterHeading">
+          <div class="card-title-row">
+            <div>
+              <h2 id="rosterHeading" class="card-title">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Current Marks Overview: <span id="currentStudentOverviewName" style="color: var(--color-primary);">Select a Student</span>
+              </h2>
+              <p class="card-subtitle">
+                Comprehensive marks status across all 10 curricular subjects. Click "Edit" on any row to immediately load that subject into the input form.
+              </p>
+            </div>
+            <div id="studentProgressIndicator" style="display: none;">
+              <span class="badge badge-withheld" id="studentProgressBadge">0 / 0 Entered</span>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table" aria-label="Student 10 Subjects Evaluation Table">
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Curricular Subject Title</th>
+                  <th scope="col" style="text-align: right;">Internal (40)</th>
+                  <th scope="col" style="text-align: right;">External (60)</th>
+                  <th scope="col" style="text-align: right;">Total (100)</th>
+                  <th scope="col">Status</th>
+                  <th scope="col" style="text-align: center;">Action</th>
+                </tr>
+              </thead>
+              <tbody id="studentMarksTableBody">
+                <tr>
+                  <td colspan="7" style="text-align: center; color: var(--color-text-secondary); padding: 36px 20px;">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: #94A3B8; margin-bottom: 8px;">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                    </svg>
+                    <div>Please select a student from the dropdown on the left to view their complete academic evaluation records.</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Academic Rules Note -->
+          <div style="margin-top: 20px; padding: 12px 16px; background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: var(--radius-sm); font-size: 0.8125rem; color: #64748B; display: flex; align-items: center; gap: 10px;">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #456B91; flex-shrink: 0;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>
+              <strong>Pass/Fail Rules Status:</strong> Pass/Fail rules are pending official college notification and are NOT calculated on this page. All entered internal &amp; external scores are securely preserved as recorded.
+            </span>
+          </div>
+
+        </section>
+
+        <!-- Section: Registered Students Dictionary and Marks-Entry Status (Relocated from Faculty Dashboard) -->
+        <section id="section-roster" class="dashboard-card" aria-labelledby="rosterCardTitle" style="grid-column: 1 / -1; margin-top: 8px;">
+          <div class="card-title-row">
+            <div>
+              <h2 id="rosterCardTitle" class="card-title">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Registered Students Directory &amp; Marks-Entry Status
+                <span style="display:none;">Registered Students Dictionary and Marks-Entry Status</span>
+              </h2>
+              <p class="card-subtitle">
+                Search by Student ID or Student Name. Overall Total and Percentage are withheld until all subjects are fully entered. Pass/Fail calculation is withheld pending college rules.
+              </p>
+            </div>
+
+            <!-- Controls: Search and Filter Tabs -->
+            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+              <div class="filter-tab-group" role="tablist" aria-label="Student Roster Filter">
+                <button id="filterAll" class="filter-tab-btn active" type="button" role="tab" aria-selected="true">All Students</button>
+                <button id="filterPending" class="filter-tab-btn" type="button" role="tab" aria-selected="false">Marks Pending</button>
+                <button id="filterCompleted" class="filter-tab-btn" type="button" role="tab" aria-selected="false">Fully Entered</button>
+              </div>
+              <input type="text" id="rosterSearchInput" class="form-input" placeholder="Search by ID or Name..." style="max-width: 250px; padding: 7px 12px; font-size: 0.84375rem;" aria-label="Search students by ID or Name">
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table" aria-label="Student Directory Table">
+              <thead>
+                <tr>
+                  <th scope="col">Student ID</th>
+                  <th scope="col">Student Name</th>
+                  <th scope="col">Evaluation Status</th>
+                  <th scope="col">Internal Marks</th>
+                  <th scope="col">External Marks</th>
+                  <th scope="col">Total Score</th>
+                  <th scope="col">Academic Standing</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="rosterTableBody">
+                <tr>
+                  <td colspan="8" style="text-align: center; color: var(--color-text-secondary); padding: 24px;">
+                    Retrieving student roster from database...
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>&copy; Academic Result Input Validator &bull; Step 8: Enter/Update Marks Terminal &bull; Domain Integrity &amp; MySQL Persistence</p>
+    </div>
+  </footer>
+
+  <script src="js/enter-marks.js"></script>
+</body>
+</html>

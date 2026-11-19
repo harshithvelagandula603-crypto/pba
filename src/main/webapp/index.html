@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic Result Input Validator - Validate academic marks, track subject-wise updates, and access results with confidence.">
+  <title>Academic Result Input Validator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-link" aria-label="Academic Result Input Validator Home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </span>
+        <span>Academic Result Input Validator</span>
+      </a>
+
+      <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="login.html" id="navLoginBtn" class="btn btn-primary btn-nav">Login</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Academic Results. Accurate. Validated. Transparent.</h1>
+          <p class="hero-description">
+            Validate academic marks, track subject-wise updates, and access results with confidence.
+          </p>
+          <div class="hero-actions">
+            <a href="login.html?role=student" id="studentLoginBtn" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Student Login
+            </a>
+            <a href="login.html?role=faculty" id="facultyLoginBtn" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Faculty Login
+            </a>
+          </div>
+        </div>
+
+        <!-- Minimal Academic Emblem Visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-emblem-card">
+            <div class="emblem-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h2 class="emblem-title">Academic Record Integrity</h2>
+            <p class="emblem-subtitle">Structured evaluation, independent subject updates, and reliable student results.</p>
+            <div class="emblem-divider"></div>
+            <span class="emblem-tag">Academic Web Portal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Key Features</h2>
+          <p class="section-lead">Essential capabilities designed for clear, accurate, and disciplined academic record management.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Input Validation</h3>
+            <p class="feature-description">
+              Prevent invalid academic data.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Subject-Wise Tracking</h3>
+            <p class="feature-description">
+              Check the update status of each subject.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Missing Marks Detection</h3>
+            <p class="feature-description">
+              Identify marks that have not yet been entered.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                <line x1="8" y1="6" x2="16" y2="6"></line>
+                <line x1="16" y1="14" x2="16" y2="18"></line>
+                <path d="M16 10h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M8 14h.01"></path>
+                <path d="M12 18h.01"></path>
+                <path d="M8 18h.01"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Automatic Result Calculation</h3>
+            <p class="feature-description">
+              Calculate results when all required marks are available.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-box">
+          <h2 class="about-title">About the Project</h2>
+          <p class="about-description">
+            Academic Result Input Validator is a web application designed to improve academic record accuracy through input validation, subject-wise mark tracking, and transparent result management.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand-col">
+        <div class="footer-brand">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+          <span>Academic Result Input Validator</span>
+        </div>
+        <p class="footer-desc">
+          A web application designed to improve academic record accuracy through input validation, subject-wise mark tracking, and transparent result management.
+        </p>
+      </div>
+
+      <div class="footer-nav-col">
+        <h3 class="footer-nav-title">Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#features" class="footer-link">Features</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; Academic Result Input Validator. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

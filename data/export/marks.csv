@@ -1,0 +1,341 @@
+student_id,student_name,subject_id,subject_code,internal_marks,external_marks,total_marks,eval_status
+25QM1A66D6,Shiva Charan Goud,COA,COA,,,,Not Updated
+25QM1A66D6,Shiva Charan Goud,DBMS,DBMS,40,,,Internal Only
+25QM1A66D6,Shiva Charan Goud,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66D6,Shiva Charan Goud,MATHS,Maths,,,,Not Updated
+25QM1A66D6,Shiva Charan Goud,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66D6,Shiva Charan Goud,OOPS,OOPs,8,23,31,FAIL
+25QM1A66D6,Shiva Charan Goud,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66D6,Shiva Charan Goud,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66D6,Shiva Charan Goud,SE,SE,,,,Not Updated
+25QM1A66D6,Shiva Charan Goud,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66D7,Koushik Reddy,COA,COA,,,,Not Updated
+25QM1A66D7,Koushik Reddy,DBMS,DBMS,,,,Not Updated
+25QM1A66D7,Koushik Reddy,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66D7,Koushik Reddy,MATHS,Maths,,,,Not Updated
+25QM1A66D7,Koushik Reddy,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66D7,Koushik Reddy,OOPS,OOPs,,,,Not Updated
+25QM1A66D7,Koushik Reddy,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66D7,Koushik Reddy,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66D7,Koushik Reddy,SE,SE,,,,Not Updated
+25QM1A66D7,Koushik Reddy,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66D8,Siddharth,COA,COA,,,,Not Updated
+25QM1A66D8,Siddharth,DBMS,DBMS,,,,Not Updated
+25QM1A66D8,Siddharth,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66D8,Siddharth,MATHS,Maths,,,,Not Updated
+25QM1A66D8,Siddharth,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66D8,Siddharth,OOPS,OOPs,,,,Not Updated
+25QM1A66D8,Siddharth,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66D8,Siddharth,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66D8,Siddharth,SE,SE,,,,Not Updated
+25QM1A66D8,Siddharth,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66D9,Rahul,COA,COA,,,,Not Updated
+25QM1A66D9,Rahul,DBMS,DBMS,,,,Not Updated
+25QM1A66D9,Rahul,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66D9,Rahul,MATHS,Maths,,,,Not Updated
+25QM1A66D9,Rahul,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66D9,Rahul,OOPS,OOPs,,,,Not Updated
+25QM1A66D9,Rahul,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66D9,Rahul,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66D9,Rahul,SE,SE,,,,Not Updated
+25QM1A66D9,Rahul,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E0,Mahendar,COA,COA,,,,Not Updated
+25QM1A66E0,Mahendar,DBMS,DBMS,,,,Not Updated
+25QM1A66E0,Mahendar,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E0,Mahendar,MATHS,Maths,,,,Not Updated
+25QM1A66E0,Mahendar,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E0,Mahendar,OOPS,OOPs,,,,Not Updated
+25QM1A66E0,Mahendar,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E0,Mahendar,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E0,Mahendar,SE,SE,,,,Not Updated
+25QM1A66E0,Mahendar,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E1,Sri Charthi,COA,COA,,,,Not Updated
+25QM1A66E1,Sri Charthi,DBMS,DBMS,,,,Not Updated
+25QM1A66E1,Sri Charthi,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E1,Sri Charthi,MATHS,Maths,,,,Not Updated
+25QM1A66E1,Sri Charthi,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E1,Sri Charthi,OOPS,OOPs,,,,Not Updated
+25QM1A66E1,Sri Charthi,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E1,Sri Charthi,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E1,Sri Charthi,SE,SE,,,,Not Updated
+25QM1A66E1,Sri Charthi,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E2,Aarthi,COA,COA,,,,Not Updated
+25QM1A66E2,Aarthi,DBMS,DBMS,,,,Not Updated
+25QM1A66E2,Aarthi,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E2,Aarthi,MATHS,Maths,,,,Not Updated
+25QM1A66E2,Aarthi,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E2,Aarthi,OOPS,OOPs,,,,Not Updated
+25QM1A66E2,Aarthi,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E2,Aarthi,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E2,Aarthi,SE,SE,,,,Not Updated
+25QM1A66E2,Aarthi,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E3,Madhupriya,COA,COA,,,,Not Updated
+25QM1A66E3,Madhupriya,DBMS,DBMS,,,,Not Updated
+25QM1A66E3,Madhupriya,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E3,Madhupriya,MATHS,Maths,,,,Not Updated
+25QM1A66E3,Madhupriya,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E3,Madhupriya,OOPS,OOPs,,,,Not Updated
+25QM1A66E3,Madhupriya,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E3,Madhupriya,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E3,Madhupriya,SE,SE,,,,Not Updated
+25QM1A66E3,Madhupriya,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E4,Vishwa,COA,COA,,,,Not Updated
+25QM1A66E4,Vishwa,DBMS,DBMS,,,,Not Updated
+25QM1A66E4,Vishwa,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E4,Vishwa,MATHS,Maths,,,,Not Updated
+25QM1A66E4,Vishwa,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E4,Vishwa,OOPS,OOPs,,,,Not Updated
+25QM1A66E4,Vishwa,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E4,Vishwa,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E4,Vishwa,SE,SE,,,,Not Updated
+25QM1A66E4,Vishwa,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,COA,COA,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,DBMS,DBMS,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,MATHS,Maths,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,OOPS,OOPs,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,SE,SE,,,,Not Updated
+25QM1A66E5,Venkat Ganesh,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E6,Bhuva,COA,COA,,,,Not Updated
+25QM1A66E6,Bhuva,DBMS,DBMS,,,,Not Updated
+25QM1A66E6,Bhuva,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E6,Bhuva,MATHS,Maths,,,,Not Updated
+25QM1A66E6,Bhuva,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E6,Bhuva,OOPS,OOPs,,,,Not Updated
+25QM1A66E6,Bhuva,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E6,Bhuva,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E6,Bhuva,SE,SE,,,,Not Updated
+25QM1A66E6,Bhuva,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E7,Tanuja,COA,COA,,,,Not Updated
+25QM1A66E7,Tanuja,DBMS,DBMS,,,,Not Updated
+25QM1A66E7,Tanuja,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E7,Tanuja,MATHS,Maths,,,,Not Updated
+25QM1A66E7,Tanuja,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E7,Tanuja,OOPS,OOPs,,,,Not Updated
+25QM1A66E7,Tanuja,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E7,Tanuja,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E7,Tanuja,SE,SE,,,,Not Updated
+25QM1A66E7,Tanuja,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,COA,COA,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,DBMS,DBMS,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,MATHS,Maths,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,OOPS,OOPs,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,SE,SE,,,,Not Updated
+25QM1A66E8,Chanakya Vara Prasad,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66E9,Ajay,COA,COA,,,,Not Updated
+25QM1A66E9,Ajay,DBMS,DBMS,,,,Not Updated
+25QM1A66E9,Ajay,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66E9,Ajay,MATHS,Maths,,,,Not Updated
+25QM1A66E9,Ajay,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66E9,Ajay,OOPS,OOPs,,,,Not Updated
+25QM1A66E9,Ajay,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66E9,Ajay,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66E9,Ajay,SE,SE,,,,Not Updated
+25QM1A66E9,Ajay,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F0,Aash mitha,COA,COA,,,,Not Updated
+25QM1A66F0,Aash mitha,DBMS,DBMS,,,,Not Updated
+25QM1A66F0,Aash mitha,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F0,Aash mitha,MATHS,Maths,,,,Not Updated
+25QM1A66F0,Aash mitha,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F0,Aash mitha,OOPS,OOPs,,,,Not Updated
+25QM1A66F0,Aash mitha,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F0,Aash mitha,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F0,Aash mitha,SE,SE,,,,Not Updated
+25QM1A66F0,Aash mitha,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F1,Sai Charan,COA,COA,,,,Not Updated
+25QM1A66F1,Sai Charan,DBMS,DBMS,,,,Not Updated
+25QM1A66F1,Sai Charan,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F1,Sai Charan,MATHS,Maths,,,,Not Updated
+25QM1A66F1,Sai Charan,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F1,Sai Charan,OOPS,OOPs,,,,Not Updated
+25QM1A66F1,Sai Charan,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F1,Sai Charan,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F1,Sai Charan,SE,SE,,,,Not Updated
+25QM1A66F1,Sai Charan,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F2,Abhishek,COA,COA,,,,Not Updated
+25QM1A66F2,Abhishek,DBMS,DBMS,,,,Not Updated
+25QM1A66F2,Abhishek,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F2,Abhishek,MATHS,Maths,,,,Not Updated
+25QM1A66F2,Abhishek,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F2,Abhishek,OOPS,OOPs,,,,Not Updated
+25QM1A66F2,Abhishek,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F2,Abhishek,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F2,Abhishek,SE,SE,,,,Not Updated
+25QM1A66F2,Abhishek,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F3,Avinash,COA,COA,,,,Not Updated
+25QM1A66F3,Avinash,DBMS,DBMS,,,,Not Updated
+25QM1A66F3,Avinash,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F3,Avinash,MATHS,Maths,,,,Not Updated
+25QM1A66F3,Avinash,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F3,Avinash,OOPS,OOPs,,,,Not Updated
+25QM1A66F3,Avinash,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F3,Avinash,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F3,Avinash,SE,SE,,,,Not Updated
+25QM1A66F3,Avinash,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F4,Raghu veer,COA,COA,,,,Not Updated
+25QM1A66F4,Raghu veer,DBMS,DBMS,,,,Not Updated
+25QM1A66F4,Raghu veer,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F4,Raghu veer,MATHS,Maths,,,,Not Updated
+25QM1A66F4,Raghu veer,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F4,Raghu veer,OOPS,OOPs,,,,Not Updated
+25QM1A66F4,Raghu veer,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F4,Raghu veer,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F4,Raghu veer,SE,SE,,,,Not Updated
+25QM1A66F4,Raghu veer,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F5,Sharath,COA,COA,,,,Not Updated
+25QM1A66F5,Sharath,DBMS,DBMS,,,,Not Updated
+25QM1A66F5,Sharath,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F5,Sharath,MATHS,Maths,,,,Not Updated
+25QM1A66F5,Sharath,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F5,Sharath,OOPS,OOPs,,,,Not Updated
+25QM1A66F5,Sharath,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F5,Sharath,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F5,Sharath,SE,SE,,,,Not Updated
+25QM1A66F5,Sharath,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F6,Sai Ganesh,COA,COA,,,,Not Updated
+25QM1A66F6,Sai Ganesh,DBMS,DBMS,,,,Not Updated
+25QM1A66F6,Sai Ganesh,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F6,Sai Ganesh,MATHS,Maths,,,,Not Updated
+25QM1A66F6,Sai Ganesh,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F6,Sai Ganesh,OOPS,OOPs,,,,Not Updated
+25QM1A66F6,Sai Ganesh,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F6,Sai Ganesh,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F6,Sai Ganesh,SE,SE,,,,Not Updated
+25QM1A66F6,Sai Ganesh,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F7,Sarfaz,COA,COA,,,,Not Updated
+25QM1A66F7,Sarfaz,DBMS,DBMS,,,,Not Updated
+25QM1A66F7,Sarfaz,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F7,Sarfaz,MATHS,Maths,,,,Not Updated
+25QM1A66F7,Sarfaz,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F7,Sarfaz,OOPS,OOPs,,,,Not Updated
+25QM1A66F7,Sarfaz,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F7,Sarfaz,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F7,Sarfaz,SE,SE,,,,Not Updated
+25QM1A66F7,Sarfaz,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F8,Siddu,COA,COA,,,,Not Updated
+25QM1A66F8,Siddu,DBMS,DBMS,,,,Not Updated
+25QM1A66F8,Siddu,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F8,Siddu,MATHS,Maths,,,,Not Updated
+25QM1A66F8,Siddu,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F8,Siddu,OOPS,OOPs,,,,Not Updated
+25QM1A66F8,Siddu,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F8,Siddu,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F8,Siddu,SE,SE,,,,Not Updated
+25QM1A66F8,Siddu,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66F9,Manasa,COA,COA,,,,Not Updated
+25QM1A66F9,Manasa,DBMS,DBMS,,,,Not Updated
+25QM1A66F9,Manasa,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66F9,Manasa,MATHS,Maths,,,,Not Updated
+25QM1A66F9,Manasa,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66F9,Manasa,OOPS,OOPs,,,,Not Updated
+25QM1A66F9,Manasa,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66F9,Manasa,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66F9,Manasa,SE,SE,,,,Not Updated
+25QM1A66F9,Manasa,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G0,Hansika,COA,COA,,,,Not Updated
+25QM1A66G0,Hansika,DBMS,DBMS,,,,Not Updated
+25QM1A66G0,Hansika,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G0,Hansika,MATHS,Maths,,,,Not Updated
+25QM1A66G0,Hansika,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G0,Hansika,OOPS,OOPs,,,,Not Updated
+25QM1A66G0,Hansika,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G0,Hansika,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G0,Hansika,SE,SE,,,,Not Updated
+25QM1A66G0,Hansika,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G1,Ezra,COA,COA,,,,Not Updated
+25QM1A66G1,Ezra,DBMS,DBMS,,,,Not Updated
+25QM1A66G1,Ezra,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G1,Ezra,MATHS,Maths,,,,Not Updated
+25QM1A66G1,Ezra,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G1,Ezra,OOPS,OOPs,,,,Not Updated
+25QM1A66G1,Ezra,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G1,Ezra,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G1,Ezra,SE,SE,,,,Not Updated
+25QM1A66G1,Ezra,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G2,Sai Rohith,COA,COA,,,,Not Updated
+25QM1A66G2,Sai Rohith,DBMS,DBMS,,,,Not Updated
+25QM1A66G2,Sai Rohith,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G2,Sai Rohith,MATHS,Maths,,,,Not Updated
+25QM1A66G2,Sai Rohith,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G2,Sai Rohith,OOPS,OOPs,,,,Not Updated
+25QM1A66G2,Sai Rohith,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G2,Sai Rohith,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G2,Sai Rohith,SE,SE,,,,Not Updated
+25QM1A66G2,Sai Rohith,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G3,Suman Ali,COA,COA,,,,Not Updated
+25QM1A66G3,Suman Ali,DBMS,DBMS,,,,Not Updated
+25QM1A66G3,Suman Ali,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G3,Suman Ali,MATHS,Maths,,,,Not Updated
+25QM1A66G3,Suman Ali,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G3,Suman Ali,OOPS,OOPs,,,,Not Updated
+25QM1A66G3,Suman Ali,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G3,Suman Ali,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G3,Suman Ali,SE,SE,,,,Not Updated
+25QM1A66G3,Suman Ali,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G4,Bhramanghna,COA,COA,,,,Not Updated
+25QM1A66G4,Bhramanghna,DBMS,DBMS,,,,Not Updated
+25QM1A66G4,Bhramanghna,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G4,Bhramanghna,MATHS,Maths,,,,Not Updated
+25QM1A66G4,Bhramanghna,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G4,Bhramanghna,OOPS,OOPs,,,,Not Updated
+25QM1A66G4,Bhramanghna,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G4,Bhramanghna,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G4,Bhramanghna,SE,SE,,,,Not Updated
+25QM1A66G4,Bhramanghna,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G5,Arshiya,COA,COA,,,,Not Updated
+25QM1A66G5,Arshiya,DBMS,DBMS,,,,Not Updated
+25QM1A66G5,Arshiya,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G5,Arshiya,MATHS,Maths,,,,Not Updated
+25QM1A66G5,Arshiya,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G5,Arshiya,OOPS,OOPs,,,,Not Updated
+25QM1A66G5,Arshiya,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G5,Arshiya,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G5,Arshiya,SE,SE,,,,Not Updated
+25QM1A66G5,Arshiya,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G6,Vinay,COA,COA,,,,Not Updated
+25QM1A66G6,Vinay,DBMS,DBMS,,,,Not Updated
+25QM1A66G6,Vinay,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G6,Vinay,MATHS,Maths,,,,Not Updated
+25QM1A66G6,Vinay,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G6,Vinay,OOPS,OOPs,,,,Not Updated
+25QM1A66G6,Vinay,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G6,Vinay,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G6,Vinay,SE,SE,,,,Not Updated
+25QM1A66G6,Vinay,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G7,Veera,COA,COA,,,,Not Updated
+25QM1A66G7,Veera,DBMS,DBMS,,,,Not Updated
+25QM1A66G7,Veera,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G7,Veera,MATHS,Maths,,,,Not Updated
+25QM1A66G7,Veera,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G7,Veera,OOPS,OOPs,,,,Not Updated
+25QM1A66G7,Veera,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G7,Veera,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G7,Veera,SE,SE,,,,Not Updated
+25QM1A66G7,Veera,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G8,Yokshitha,COA,COA,,,,Not Updated
+25QM1A66G8,Yokshitha,DBMS,DBMS,,,,Not Updated
+25QM1A66G8,Yokshitha,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G8,Yokshitha,MATHS,Maths,,,,Not Updated
+25QM1A66G8,Yokshitha,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G8,Yokshitha,OOPS,OOPs,,,,Not Updated
+25QM1A66G8,Yokshitha,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G8,Yokshitha,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G8,Yokshitha,SE,SE,,,,Not Updated
+25QM1A66G8,Yokshitha,SE_LAB,SE Lab,,,,Not Updated
+25QM1A66G9,Akhil,COA,COA,,,,Not Updated
+25QM1A66G9,Akhil,DBMS,DBMS,,,,Not Updated
+25QM1A66G9,Akhil,DBMS_LAB,DBMS Lab,,,,Not Updated
+25QM1A66G9,Akhil,MATHS,Maths,,,,Not Updated
+25QM1A66G9,Akhil,MATHS_LAB,Maths Lab,,,,Not Updated
+25QM1A66G9,Akhil,OOPS,OOPs,,,,Not Updated
+25QM1A66G9,Akhil,OOPS_LAB,OOPs Lab,,,,Not Updated
+25QM1A66G9,Akhil,SD_LAB,SD Lab,,,,Not Updated
+25QM1A66G9,Akhil,SE,SE,,,,Not Updated
+25QM1A66G9,Akhil,SE_LAB,SE Lab,,,,Not Updated

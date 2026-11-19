@@ -1,0 +1,11 @@
+subject_id,subject_code,subject_name,max_marks,max_internal,max_external,pass_marks
+COA,COA,Computer Organization and Architecture,100,40,60,40
+DBMS,DBMS,Database Management Systems,100,40,60,40
+DBMS_LAB,DBMS Lab,Database Management Systems Laboratory,100,40,60,40
+MATHS,Maths,Mathematics,100,40,60,40
+MATHS_LAB,Maths Lab,Mathematics Laboratory,100,40,60,40
+OOPS,OOPs,Object-Oriented Programming,100,40,60,40
+OOPS_LAB,OOPs Lab,Object-Oriented Programming Laboratory,100,40,60,40
+SD_LAB,SD Lab,Software Development Laboratory,100,40,60,40
+SE,SE,Software Engineering,100,40,60,40
+SE_LAB,SE Lab,Software Engineering Laboratory,100,40,60,40

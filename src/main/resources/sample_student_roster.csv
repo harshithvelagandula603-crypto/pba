@@ -1,0 +1,11 @@
+# ==============================================================================
+# Academic Result Input Validator - Student Roster Import Template
+# Format: UTF-8 Encoded CSV, Comma-Separated
+# Rules:
+# 1. student_id is required, must be unique across the institution.
+# 2. student_name is required and cannot be blank.
+# 3. roll_no is required, unique.
+# 4. email, department, semester are optional metadata fields.
+# 5. Do not include header commentary lines (starting with #) in production files.
+# ==============================================================================
+student_id,student_name,roll_no,email,department,semester
